@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<title>CSS Conditional Rules Level 3</title>
+<style>
+.OK {
+  visibility: hidden;
+}
+
+@supports (margin: 0) {
+  #at-supports .OK {
+    visibility: visible;
+  }
+}
+</style>
+</head>
+<body>
+  <h1>CSS Conditional Rules Level 3</h1>
+  <section id="at-supports">
+    <h2>@supports ルール</h2>
+    <ul>
+      <li><span class="OK">OK</span></li>
+    </ul>
+  </section>
+</body>
+</html>

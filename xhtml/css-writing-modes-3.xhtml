@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<title>CSS Writing Modes Level 3</title>
+<style>
+html {
+  writing-mode: vertical-rl; /* 縦書き */
+}
+#text-orientation .upright {
+  text-orientation: upright;
+}
+#text-orientation .sideways {
+  text-orientation: sideways;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Writing Modes Level 3</h1>
+  <section id="writing-mode">
+    <h2>writing-mode プロパティ</h2>
+    <section class="vertical-rl">
+      <h3>vertical-rl</h3>
+      <ul>
+        <li>縦書きになっていればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="text-orientation">
+    <h2>text-orientation プロパティ</h2>
+    <section class="upright">
+      <h3>upright</h3>
+      <ul>
+        <li>正立（upright）になっていればOK</li>
+      </ul>
+    </section>
+    <section class="sideways">
+      <h3>sideways</h3>
+      <ul>
+        <li>横倒し（sideways）になっていればOK</li>
+      </ul>
+    </section>
+  </section>
+</body>
+</html>

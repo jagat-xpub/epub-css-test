@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<title>CSS Color Level 4</title>
+<style>
+.OK::before {
+  content: "OK";
+  color: transparent;
+}
+
+#opacity .OK::before {
+  display: inline-block;
+  width: 2em;
+  color: black;
+}
+#opacity .OK::after {
+  content: "\A0";
+  display: inline-block;
+  width: 2em;
+  margin-left: -2em;
+  background-color: white;
+  opacity: 0;
+  /* opacity: 0（透明化）が無効なら「OK」が白で覆い隠される */
+}
+
+#rgb .OK::before {
+  color: rgb(0 0 0 / 1);
+}
+
+#hex .hex8 .OK::before {
+  color: #000000ff;
+}
+
+#hex .hex4 .OK::before {
+  color: #000f;
+}
+
+#hsl .OK::before {
+  color: hsl(120 100% 0% / 1);
+}
+
+#hwb .OK::before {
+  color: hwb(120 0% 100% / 1);
+}
+</style>
+</head>
+<body>
+  <h1>CSS Color Level 4</h1>
+  <section id="opacity">
+    <h2>opacity プロパティ</h2>
+    <ul>
+      <li><span class="OK"></span></li>
+    </ul>
+  </section>
+  <section id="rgb">
+    <h2>rgb() 関数のコンマなし形式　例: rgb(0 255 0 / .5)</h2>
+    <ul>
+      <li><span class="OK"></span></li>
+    </ul>
+  </section>
+  <section id="hex">
+    <h2>16進数のRGBA形式（8桁、4桁）　例: #88FF44CC, #8F4C</h2>
+    <ul>
+      <li class="hex8"><span class="OK"></span></li>
+      <li class="hex4"><span class="OK"></span></li>
+    </ul>
+  </section>
+  <section id="hsl">
+    <h2>hsl() 関数</h2>
+    <ul>
+      <li><span class="OK"></span></li>
+    </ul>
+  </section>
+  <section id="hwb">
+    <h2>hwb() 関数</h2>
+    <ul>
+      <li><span class="OK"></span></li>
+    </ul>
+  </section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<title>CSS Cascading and Inheritance Level 4</title>
+<style>
+.OK {
+  visibility: hidden;
+}
+
+#all .OK {
+  all: inherit;
+}
+
+#defaulting .initial .OK {
+  visibility: initial;
+}
+#defaulting .unset .OK {
+  visibility: unset;
+}
+#defaulting .revert .OK {
+  visibility: revert;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Cascading and Inheritance Level 4</h1>
+  <section id="all">
+    <h2>all プロパティ</h2>
+    <ul>
+      <li><span><span class="OK">OK</span></span></li>
+    </ul>
+  </section>
+  <section id="defaulting">
+    <h2>プロパティの値 initial, unset, revert</h2>
+    <ul>
+      <li><span class="initial"><span class="OK">OK</span></span></li>
+      <li><span class="unset"><span class="OK">OK</span></span></li>
+      <li><span class="revert"><span class="OK">OK</span></span></li>
+    </ul>
+  </section>
+</body>
+</html>
