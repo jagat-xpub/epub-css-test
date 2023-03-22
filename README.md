@@ -28,7 +28,7 @@
   - テスト: <a href="xhtml/css-color-4.xhtml">xhtml/css-color-4.xhtml</a>
 - [CSS Backgrounds and Borders Level 3](https://www.w3.org/TR/css-backgrounds-3/)
   - テスト: <a href="xhtml/css-backgrounds-3.xhtml">xhtml/css-backgrounds-3.xhtml</a>
-- [CSS Images Level 3](https://www.w3.org/TR/css-images-3/) -- グラデーション関数
+- [CSS Images Level 3](https://www.w3.org/TR/css-images-3/) -- グラデーション関数, object-fit プロパティ, object-position プロパティ
   - テスト: <a href="xhtml/css-images-3.xhtml">xhtml/css-images-3.xhtml</a>
 - [CSS Fonts Level 3](https://www.w3.org/TR/css-fonts-3/)
   - テスト🚧: <a href="xhtml/css-fonts-3.xhtml">xhtml/css-fonts-3.xhtml</a>
