@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Backgrounds and Borders Level 3</title>
+<style>
+section {
+  margin: 1em 0;
+  padding: 4px;
+}
+
+#background-image {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURUdwTNbW1q782KsAAAABdFJOUwBA5thmAAAADElEQVQI12P4wAAGAAaYAPHNBGMMAAAAAElFTkSuQmCC), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEAQMAAACTPww9AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURUdwTNbW1q782KsAAAABdFJOUwBA5thmAAAADElEQVQI12NoYABDAAgIAgFgDgI8AAAAAElFTkSuQmCC);
+}
+
+#border-radius {
+  border: 1px solid black;
+  border-radius: 2em;
+}
+
+#border-image {
+  border: 8px solid;
+  border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPAQMAAAABGAcJAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURUdwTAAAAJ8qhFEAAAABdFJOUwBA5thmAAAAIklEQVQI12P4acfQvYih/xGIBLIVOBgKZBh+2IFIIBtVFgBU4g8RSRblqwAAAABJRU5ErkJggg==) 5;
+}
+
+#box-shadow {
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px gray;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Backgrounds and Borders Level 3</h1>
+  <section id="background-image">
+    <h2>複数の背景画像</h2>
+    <ul>
+      <li>横線と縦線の2つの背景画像が合わさって格子柄になっていればOK</li>
+    </ul>
+  </section>
+  <section id="border-radius">
+    <h2>border-radius プロパティ</h2>
+    <ul>
+      <li>角が丸い枠で囲まれていればOK</li>
+    </ul>
+  </section>
+  <section id="border-image">
+    <h2>border-image プロパティ</h2>
+    <ul>
+      <li>飾り罫で囲まれていればOK</li>
+    </ul>
+  </section>
+  <section id="box-shadow">
+    <h2>box-shadow プロパティ</h2>
+    <ul>
+      <li>影付きの枠で囲まれていればOK</li>
+    </ul>
+  </section>
+</body>
+</html>
