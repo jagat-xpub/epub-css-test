@@ -37,7 +37,7 @@
 - [CSS Multi-column Layout Level 1](https://www.w3.org/TR/css-multicol-1/)
   - テスト: <a href="xhtml/css-multicol-1.xhtml">xhtml/css-multicol-1.xhtml</a>
 - [CSS Flexible Box Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
-  - テスト🚧: <a href="xhtml/css-flexbox-1.xhtml">xhtml/css-flexbox-1.xhtml</a>
+  - テスト: <a href="xhtml/css-flexbox-1.xhtml">xhtml/css-flexbox-1.xhtml</a>
 - [CSS User Interface Module Level 3](https://www.w3.org/TR/css-ui-3/) -- box-sizing プロパティ, outline プロパティ
   - テスト🚧: <a href="xhtml/css-ui-3.xhtml">xhtml/css-ui-3.xhtml</a>
 - [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/) -- contain プロパティ
@@ -65,7 +65,7 @@
 [CSS Snapshot 2023 -- §2.3. Modules with Rough Interoperability](https://www.w3.org/TR/css-2023/#rough-interop) からテストするCSSモジュールをピックアップ
 
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
-  - テスト🚧: <a href="xhtml/css-grid-1.xhtml">xhtml/css-grid-1.xhtml</a>
+  - テスト: <a href="xhtml/css-grid-1.xhtml">xhtml/css-grid-1.xhtml</a>
 - [CSS Box Sizing Level 3](https://www.w3.org/TR/css-sizing-3/) -- width・height プロパティの値 min-content と max-content
   - テスト🚧: <a href="xhtml/css-sizing-3.xhtml">xhtml/css-sizing-3.xhtml</a>
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/) -- 論理プロパティ
