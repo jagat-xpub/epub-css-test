@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Box Sizing Level 3</title>
+<style>
+#sizing-values .test {
+  border: 3px solid;
+}
+
+#sizing-values .min-content .test {
+  width: min-content;
+}
+
+#sizing-values .max-content .test {
+  width: max-content;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Box Sizing Level 3</h1>
+  <section id="sizing-values">
+    <h2>サイズの値 min-content, max-content</h2>
+    <section class="min-content">
+      <h3>min-content</h3>
+      <div class="test">The quick brown fox jumps over a lazy dog.</div>
+      <ul>
+        <li>width: min-content により、ボックスの幅が内容のテキストが折り返して収まる最小の幅となっていればOK</li>
+      </ul>
+    </section>
+    <section class="max-content">
+      <h3>max-content</h3>
+      <div class="test">The quick brown fox jumps over a lazy dog.</div>
+      <ul>
+        <li>width: max-content により、ボックスの幅が内容のテキストの最大幅（折り返しなしでぴったり収まる幅）となっていればOK</li>
+      </ul>
+    </section>
+  </section>
+</body>
+</html>

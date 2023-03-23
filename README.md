@@ -39,11 +39,11 @@
 - [CSS Flexible Box Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
   - テスト: <a href="xhtml/css-flexbox-1.xhtml">xhtml/css-flexbox-1.xhtml</a>
 - [CSS User Interface Module Level 3](https://www.w3.org/TR/css-ui-3/) -- box-sizing プロパティ, outline プロパティ
-  - テスト🚧: <a href="xhtml/css-ui-3.xhtml">xhtml/css-ui-3.xhtml</a>
+  - テスト: <a href="xhtml/css-ui-3.xhtml">xhtml/css-ui-3.xhtml</a>
 - [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/) -- contain プロパティ
   - テスト🚧: <a href="xhtml/css-contain-1.xhtml">xhtml/css-contain-1.xhtml</a>
 - [CSS Transforms Level 1](https://www.w3.org/TR/css-transforms-1/) -- transform プロパティ
-  - テスト🚧: <a href="xhtml/css-transforms-1.xhtml">xhtml/css-transforms-1.xhtml</a>
+  - テスト: <a href="xhtml/css-transforms-1.xhtml">xhtml/css-transforms-1.xhtml</a>
 - [CSS Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/) -- mix-blend-mode プロパティなど
   - テスト🚧: <a href="xhtml/compositing-1.xhtml">xhtml/compositing-1.xhtml</a>
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/) -- @counter-style ルール, 定義済みカウンタースタイル cjk-decimal など
@@ -67,15 +67,15 @@
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
   - テスト: <a href="xhtml/css-grid-1.xhtml">xhtml/css-grid-1.xhtml</a>
 - [CSS Box Sizing Level 3](https://www.w3.org/TR/css-sizing-3/) -- width・height プロパティの値 min-content と max-content
-  - テスト🚧: <a href="xhtml/css-sizing-3.xhtml">xhtml/css-sizing-3.xhtml</a>
+  - テスト: <a href="xhtml/css-sizing-3.xhtml">xhtml/css-sizing-3.xhtml</a>
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/) -- 論理プロパティ
   - テスト: <a href="xhtml/css-logical-1.xhtml">xhtml/css-logical-1.xhtml</a>
 - [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/) -- @supports selector() ルール
-  - テスト🚧: <a href="xhtml/css-conditional-4.xhtml">xhtml/css-conditional-4.xhtml</a>
+  - テスト: <a href="xhtml/css-conditional-4.xhtml">xhtml/css-conditional-4.xhtml</a>
 - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/) -- @layer ルール
   - テスト🚧: <a href="xhtml/css-cascade-5.xhtml">xhtml/css-cascade-5.xhtml</a>
 
 ### CSS Snapshot 2023 に載っていないが、最新のブラウザで利用できるもの
 
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/) -- 擬似クラス :is(), :where(), :has()
-  - テスト🚧: <a href="xhtml/selectors-4.xhtml">xhtml/selectors-4.xhtml</a>
+  - テスト: <a href="xhtml/selectors-4.xhtml">xhtml/selectors-4.xhtml</a>

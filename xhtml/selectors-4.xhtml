@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>Selectors Level 4</title>
+<style>
+.OK {
+  visibility: hidden;
+}
+
+#is-pseudo :is(.OK) {
+  visibility: visible;
+}
+
+#where-pseudo :where(.OK) {
+  visibility: visible;
+}
+
+#has-pseudo :has(+ .test) {
+  visibility: visible;
+}
+
+</style>
+</head>
+<body>
+  <h1>Selectors Level 4</h1>
+  <section id="is-pseudo">
+    <h2>:is() 擬似クラス</h2>
+    <ul>
+      <li><span class="OK">OK</span></li>
+    </ul>
+  </section>
+  <section id="where-pseudo">
+    <h2>:where() 擬似クラス</h2>
+    <ul>
+      <li><span class="OK">OK</span></li>
+    </ul>
+  </section>
+  <section id="has-pseudo">
+    <h2>:has() 擬似クラス</h2>
+    <ul>
+      <li><span class="OK">OK</span><span class="test"></span></li>
+    </ul>
+  </section>
+</body>
+</html>

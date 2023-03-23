@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Conditional Rules Level 4</title>
+<style>
+.OK {
+  visibility: hidden;
+}
+
+@supports selector(E > F) {
+  #at-supports-selector .OK {
+    visibility: visible;
+  }
+}
+</style>
+</head>
+<body>
+  <h1>CSS Conditional Rules Level 4</h1>
+  <section id="at-supports-selector">
+    <h2>@supports selector() ルール</h2>
+    <ul>
+      <li><span class="OK">OK</span></li>
+    </ul>
+  </section>
+</body>
+</html>
