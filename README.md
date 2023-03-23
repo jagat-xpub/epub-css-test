@@ -35,7 +35,7 @@
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
   - テスト: <a href="xhtml/css-writing-modes-3.xhtml">xhtml/css-writing-modes-3.xhtml</a>
 - [CSS Multi-column Layout Level 1](https://www.w3.org/TR/css-multicol-1/)
-  - テスト🚧: <a href="xhtml/css-multicol-1.xhtml">xhtml/css-multicol-1.xhtml</a>
+  - テスト: <a href="xhtml/css-multicol-1.xhtml">xhtml/css-multicol-1.xhtml</a>
 - [CSS Flexible Box Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
   - テスト🚧: <a href="xhtml/css-flexbox-1.xhtml">xhtml/css-flexbox-1.xhtml</a>
 - [CSS User Interface Module Level 3](https://www.w3.org/TR/css-ui-3/) -- box-sizing プロパティ, outline プロパティ
