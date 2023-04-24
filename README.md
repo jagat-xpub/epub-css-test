@@ -47,7 +47,7 @@
 - [CSS Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/) -- mix-blend-mode プロパティなど
   - テスト: <a href="xhtml/compositing-1.xhtml">xhtml/compositing-1.xhtml</a>
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/) -- @counter-style ルール, 定義済みカウンタースタイル cjk-decimal など
-  - テスト🚧: <a href="xhtml/css-counter-styles-3.xhtml">xhtml/css-counter-styles-3.xhtml</a>
+  - テスト: <a href="xhtml/css-counter-styles-3.xhtml">xhtml/css-counter-styles-3.xhtml</a>
 
 ### 「かなり安定しているが実装経験が限定的なCSSモジュール」から
 
