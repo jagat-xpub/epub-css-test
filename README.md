@@ -73,7 +73,7 @@
 - [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/) -- @supports selector() ルール
   - テスト: <a href="xhtml/css-conditional-4.xhtml">xhtml/css-conditional-4.xhtml</a>
 - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/) -- @layer ルール
-  - テスト🚧: <a href="xhtml/css-cascade-5.xhtml">xhtml/css-cascade-5.xhtml</a>
+  - テスト: <a href="xhtml/css-cascade-5.xhtml">xhtml/css-cascade-5.xhtml</a>
 
 ### CSS Snapshot 2023 に載っていないが、最新のブラウザで利用できるもの
 
