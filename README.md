@@ -58,7 +58,7 @@
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
   - テスト: <a href="xhtml/css-text-3.xhtml">xhtml/css-text-3.xhtml</a>
 - [CSS Text Decoration Level 3](https://www.w3.org/TR/css-text-decor-3/)
-  - テスト🚧: <a href="xhtml/css-text-decor-3.xhtml">xhtml/css-text-decor-3.xhtml</a>
+  - テスト: <a href="xhtml/css-text-decor-3.xhtml">xhtml/css-text-decor-3.xhtml</a>
 
 ### 「大まかな相互運用性のあるCSSモジュール」から
 
