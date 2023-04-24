@@ -31,7 +31,7 @@
 - [CSS Images Level 3](https://www.w3.org/TR/css-images-3/) -- グラデーション関数, object-fit プロパティ, object-position プロパティ
   - テスト: <a href="xhtml/css-images-3.xhtml">xhtml/css-images-3.xhtml</a>
 - [CSS Fonts Level 3](https://www.w3.org/TR/css-fonts-3/)
-  - テスト🚧: <a href="xhtml/css-fonts-3.xhtml">xhtml/css-fonts-3.xhtml</a>
+  - テスト: <a href="xhtml/css-fonts-3.xhtml">xhtml/css-fonts-3.xhtml</a>
 - [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
   - テスト: <a href="xhtml/css-writing-modes-3.xhtml">xhtml/css-writing-modes-3.xhtml</a>
 - [CSS Multi-column Layout Level 1](https://www.w3.org/TR/css-multicol-1/)
