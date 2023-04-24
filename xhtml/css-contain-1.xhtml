@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Containment Module Level 1</title>
+<style>
+#contain .test {
+  margin: 1em 2em;
+  width: 5em;
+  min-height: 5em;
+  line-height: 1.5;
+  font-family: monospace;
+  border: 3px solid;
+}
+#contain .test.none {
+  contain: none;
+}
+#contain .test.strict {
+  contain: strict;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Containment Module Level 1</h1>
+  <section id="contain">
+    <h2>contain プロパティ</h2>
+    <div class="test none">The quick brown fox jumps over the lazy dog.</div>
+    <div class="test strict">The quick brown fox jumps over the lazy dog.</div>
+    <ul>
+      <li>上の2つのボックスの2番目のほうが高さが低い（内容テキストが途中で切れている）ならOK</li>
+    </ul>
+  </section>
+</body>
+</html>

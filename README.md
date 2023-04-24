@@ -41,7 +41,7 @@
 - [CSS User Interface Module Level 3](https://www.w3.org/TR/css-ui-3/) -- box-sizing プロパティ, outline プロパティ
   - テスト: <a href="xhtml/css-ui-3.xhtml">xhtml/css-ui-3.xhtml</a>
 - [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/) -- contain プロパティ
-  - テスト🚧: <a href="xhtml/css-contain-1.xhtml">xhtml/css-contain-1.xhtml</a>
+  - テスト: <a href="xhtml/css-contain-1.xhtml">xhtml/css-contain-1.xhtml</a>
 - [CSS Transforms Level 1](https://www.w3.org/TR/css-transforms-1/) -- transform プロパティ
   - テスト: <a href="xhtml/css-transforms-1.xhtml">xhtml/css-transforms-1.xhtml</a>
 - [CSS Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/) -- mix-blend-mode プロパティなど
