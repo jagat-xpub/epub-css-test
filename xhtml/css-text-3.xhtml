@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Text Module Level 3</title>
+<style>
+.test {
+  margin: 1em;
+  border: 1px dashed;
+  width: 10em;
+}
+#word-break .keep-all .test {
+  word-break: keep-all;
+}
+#word-break .break-all .test {
+  word-break: break-all;
+}
+#line-break .loose .test {
+  line-break: loose;
+}
+#line-break .strict .test {
+  line-break: strict;
+}
+#line-break .anywhere .test {
+  line-break: anywhere;
+}
+#hyphens .none .test {
+  hyphens: none;
+}
+#hyphens .auto .test {
+  hyphens: auto;
+}
+#overflow-wrap .normal .test {
+  overflow-wrap: normal;
+}
+#overflow-wrap .anywhere .test {
+  overflow-wrap: anywhere;
+}
+#text-align-last .justify .test {
+  text-align: justify;
+  text-align-last: justify;
+}
+#hanging-punctuation .test {
+  text-align: justify;
+}
+#hanging-punctuation .first .test {
+  hanging-punctuation: first;
+}
+#hanging-punctuation .allow-end .test {
+  hanging-punctuation: allow-end;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Text Module Level 3</h1>
+  <section id="word-break">
+    <h2>word-break プロパティ</h2>
+    <section class="keep-all">
+      <h3>keep-all</h3>
+      <div class="test">ABCDEFGHIJKLMNOPQRSTUVWXYZあいうえおかきくけこさしすせそたちつてと</div>
+      <ul>
+        <li>行の折り返しがされず、ボックスからテキストがオーバーフローしていればOK</li>
+      </ul>
+    </section>
+    <section class="break-all">
+      <h3>break-all</h3>
+      <div class="test">ABCDEFGHIJKLMNOPQRSTUVWXYZあいうえおかきくけこさしすせそたちつてと</div>
+      <ul>
+        <li>英字列の途中でも行の折り返しがされて、ボックスからテキストがオーバーフローしていなければOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="line-break">
+    <h2>line-break プロパティ</h2>
+    <section class="loose">
+      <h3>loose</h3>
+      <div class="test">ファッション・ショー、ファッション・ショー、ファッション・ショー、ファッション・ショー。</div>
+      <ul>
+        <li>ゆるい禁則（小書き仮名などを行頭禁則にしない）になっていればOK</li>
+      </ul>
+    </section>
+    <section class="strict">
+      <h3>strict</h3>
+      <div class="test">ファッション・ショー、ファッション・ショー、ファッション・ショー、ファッション・ショー。</div>
+      <ul>
+        <li>きつい禁則（小書き仮名などを行頭禁則にする）になっていればOK</li>
+      </ul>
+    </section>
+    <section class="anywhere">
+      <h3>anywhere</h3>
+      <div class="test">ファッション・ショー、ファッション・ショー、ファッション・ショー、ファッション・ショー。</div>
+      <ul>
+        <li>禁則処理なしで改行されていればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="hyphens">
+    <h2>hyphens プロパティ</h2>
+    <section class="none">
+      <h3>none</h3>
+      <div class="test" lang="en">Hyphenation hyphenation hyphenation hyphenation.</div>
+      <ul>
+        <li>ハイフネーションなしで改行されていればOK</li>
+      </ul>
+    </section>
+    <section class="auto">
+      <h3>auto</h3>
+      <div class="test" lang="en">Hyphenation hyphenation hyphenation hyphenation.</div>
+      <ul>
+        <li>ハイフネーションされていればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="overflow-wrap">
+    <h2>overflow-wrap プロパティ</h2>
+    <section class="normal">
+      <h3>normal</h3>
+      <div class="test">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+      <ul>
+        <li>行の折り返しがされず、ボックスからテキストがオーバーフローしていればOK</li>
+      </ul>
+    </section>
+    <section class="anywhere">
+      <h3>anywhere</h3>
+      <div class="test">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+      <ul>
+        <li>英字列の途中でも行の折り返しがされて、ボックスからテキストがオーバーフローしていなければOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="text-align-last">
+    <h2>text-align-last プロパティ</h2>
+    <section class="justify">
+      <h3>justify</h3>
+      <div class="test">A quick brown fox jumped over the lazy dog's back.</div>
+      <ul>
+        <li>最後の行まで両端揃えになっていればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="hanging-punctuation">
+    <h2>hanging-punctuation プロパティ</h2>
+    <section class="first">
+      <h3>first</h3>
+      <div class="test">“A quick brown fox jumped over the lazy dog's back.”</div>
+      <ul>
+        <li>先頭の引用符が外側に突き出していればOK</li>
+      </ul>
+    </section>
+    <section class="allow-end">
+      <h3>allow-end</h3>
+      <div class="test">あいうえおかきくけこ、さしすせそたちつてとなにぬねのはひふへほ。</div>
+      <ul>
+        <li>句読点が行末にぶら下げられていればOK</li>
+      </ul>
+    </section>
+  </section>
+</body>
+</html>
