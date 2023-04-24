@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Fragmentation Module Level 3</title>
+<style>
+.test {
+  border: 2px solid;
+  padding: 2px;
+}
+.test + .test {
+  margin-top: 0.5em;
+}
+.test.break-before-page {
+  break-before: page;
+}
+.test.break-after-page {
+  break-after: page;
+}
+.multicol {
+  column-count: 3;
+  margin: 1.5em 0;
+}
+.test.break-before-column {
+  break-before: column;
+}
+.test.break-after-column {
+  break-after: column;
+}
+.test.orphans-widows-1 {
+  orphans: 1;
+  widows: 1;
+}
+.test.orphans-widows-2 {
+  orphans: 2;
+  widows: 2;
+}
+.test.box-decoration-break-slice {
+  box-decoration-break: slice;
+}
+.test.box-decoration-break-clone {
+  box-decoration-break: clone;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Fragmentation Module Level 3</h1>
+  <section id="break-before-after">
+    <h2>break-before, break-after プロパティ</h2>
+    <div class="test break-before-page">
+      break-before: page により、このボックスの前で改ページされていればOK
+    </div>
+    <div class="test break-after-page">
+      break-after: page により、このボックスの後で改ページされていればOK
+    </div>
+    <div class="multicol">
+      <div class="test">あああああ</div>
+      <div class="test break-before-column">
+        break-before: column により、このボックスの前で改段されていればOK
+      </div>
+      <div class="test break-after-column">
+        break-after: column により、このボックスの後で改段されていればOK
+      </div>
+      <div class="test">あああああ</div>
+    </div>
+  </section>
+  <section id="break-inside">
+    <h2>break-inside プロパティ</h2>
+    <div class="multicol">
+      <div class="test">あああああ</div>
+      <div class="test break-inside-avoid">
+        break-inside: avoid により、このボックス内で改ページも改段もされなければOK。ああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </div>
+      <div class="test">あああああ</div>
+    </div>
+  </section>
+  <section id="orphans-widows">
+    <h2>orphans, widows プロパティ</h2>
+    <div class="multicol">
+      <div class="test">ああああああああああああああああああああああああああああああああああああああああああああ</div>
+      <div class="test orphans-widows-1">
+        orphans: 1; widows: 1 により、このボックス内での段分割で1行だけの孤立行ができてもOK。ああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </div>
+      <div class="test">ああああああああああああああああああああああああああああああああああああああああああああ</div>
+    </div>
+    <div class="multicol">
+      <div class="test">ああああああああああああああああああああああああああああああああああああああああああああ</div>
+      <div class="test orphans-widows-2">
+        orphans: 2; widows: 2 により、このボックス内での段分割で1行だけの孤立行が生じなければOK。ああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </div>
+      <div class="test">ああああああああああああああああああああああああああああああああああああああああああああ</div>
+    </div>
+  </section>
+  <section id="box-decoration-break">
+    <h2>box-decoration-break プロパティ</h2>
+    <div class="multicol">
+      <div class="test">あああああ</div>
+      <div class="test box-decoration-break-slice">
+        box-decoration-break: slice により、このボックスの分割された辺にボーダーがなければOK。ああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </div>
+      <div class="test">あああああ</div>
+    </div>
+    <div class="multicol">
+      <div class="test">あああああ</div>
+      <div class="test box-decoration-break-clone">
+        box-decoration-break: clone により、このボックスの分割された辺にボーダーがあればOK。ああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      </div>
+      <div class="test">あああああ</div>
+    </div>
+  </section>
+</body>
+</html>
