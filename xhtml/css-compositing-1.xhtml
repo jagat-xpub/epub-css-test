@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Compositing and Blending Level 1</title>
+<style>
+.test {
+  width: 80px;
+  height: 80px;
+  margin: 1em auto;
+  border: 1px solid;
+  background-color: #DDD;
+}
+.test img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.test.difference img {
+  mix-blend-mode: difference;
+}
+.test.isolation div {
+  isolation: isolate;
+}
+#background-blend-mode .test {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==");
+  background-size: 80px 80px;
+}
+#background-blend-mode .test.difference {
+  background-blend-mode: difference;
+}
+</style>
+</head>
+<body>
+  <h1>CSS Compositing and Blending Level 1</h1>
+  <section id="mix-blend-mode">
+    <h2>mix-blend-mode プロパティ</h2>
+    <div class="test">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+    </div>
+    <div class="test difference">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+    </div>
+    <ul>
+      <li>上の2つの顔の画像のうち2番目だけ黒い顔ならOK</li>
+    </ul>
+  </section>
+  <section id="isolation">
+    <h2>isolation プロパティ</h2>
+    <div class="test">
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+      </div>
+    </div>
+    <div class="test difference isolation">
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+      </div>
+    </div>
+    <ul>
+      <li>上の2つの顔の画像が同じならOK</li>
+    </ul>
+  </section>
+  <section id="background-blend-mode">
+    <h2>background-blend-mode プロパティ</h2>
+    <div class="test">
+    </div>
+    <div class="test difference">
+    </div>
+    <ul>
+      <li>上の2つの顔の画像のうち2番目だけ黒い顔ならOK</li>
+    </ul>
+  </section>
+</body>
+</html>
