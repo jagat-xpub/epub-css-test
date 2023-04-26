@@ -79,3 +79,7 @@
 
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/) -- 擬似クラス :is(), :where(), :has()
   - テスト: <a href="xhtml/selectors-4.xhtml">xhtml/selectors-4.xhtml</a>
+
+## License
+
+CC0 1.0
