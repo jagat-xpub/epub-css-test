@@ -11,12 +11,12 @@
 <!-- 著者名 -->
 <dc:creator id="creator01">XMLパブリッシング準研究会</dc:creator>
 <meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
-<meta refines="#creator01" property="file-as">エックスエムパムリッシングジュンケンキュウカイ</meta>
+<meta refines="#creator01" property="file-as">エックスエムエルパブリッシングジュンケンキュウカイ</meta>
 <meta refines="#creator01" property="display-seq">1</meta>
 
 <!-- 出版社名 -->
 <dc:publisher id="publisher">公益社団法人日本印刷技術協会</dc:publisher>
-<meta refines="#publisher" property="file-as">コウエキシャダンホウジンニホンインサツギジュツホウジン</meta>
+<meta refines="#publisher" property="file-as">コウエキシャダンホウジンニホンインサツギジュツキョウカイ</meta>
 
 <!-- 言語 -->
 <dc:language>ja</dc:language>
