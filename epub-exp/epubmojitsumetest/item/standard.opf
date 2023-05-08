@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package
+ xmlns="http://www.idpf.org/2007/opf"
+ version="3.0"
+ xml:lang="ja"
+ unique-identifier="unique-id"
+ prefix="ebpaj: http://www.ebpaj.jp/"
+>
+
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<!-- 作品名 -->
+<dc:title id="title">EPUB内文字の自動ツメ／アキテスト</dc:title>
+<meta refines="#title" property="file-as">イーパブナイモジノジドウツメアキテスト</meta>
+
+<!-- 著者名 -->
+<dc:creator id="creator01">XMLパブリッシング準研究会</dc:creator>
+<meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
+<meta refines="#creator01" property="file-as">エックスエムエルパブリッシングジュンケンキュウカイ</meta>
+<meta refines="#creator01" property="display-seq">1</meta>
+
+<!-- 出版社名 -->
+<dc:publisher id="publisher">公益社団法人日本印刷技術協会</dc:publisher>
+<meta refines="#publisher" property="file-as">コウエキシャダンホウジンニホンインサツギジュツキョウカイ</meta>
+
+<!-- 言語 -->
+<dc:language>ja</dc:language>
+
+<!-- ファイルid -->
+<dc:identifier id="unique-id">urn:uuid:F1DCAAE7-8D4B-4E03-8391-4B5D9D067428</dc:identifier>
+
+<!-- 更新日 -->
+<meta property="dcterms:modified">2018-07-26T10:26:27Z</meta>
+
+<!-- etc. -->
+<meta property="ebpaj:guide-version">1.1.3</meta>
+
+</metadata>
+
+<manifest>
+
+<!-- navigation -->
+<item media-type="application/xhtml+xml" id="toc" href="navigation-documents.xhtml" properties="nav"/>
+
+<!-- style -->
+<item media-type="text/css" id="book-style"     href="style/book-style.css"/>
+<item media-type="text/css" id="style-reset"    href="style/style-reset.css"/>
+<item media-type="text/css" id="style-standard" href="style/style-standard.css"/>
+<item media-type="text/css" id="style-advance"  href="style/style-advance.css"/>
+<item media-type="text/css" id="style-check"    href="style/style-check.css"/>
+
+<!-- image -->
+<item media-type="image/jpeg" id="cover"      href="image/cover.jpg" properties="cover-image"/>
+<item media-type="image/png" id="image000t"      href="image/image000t.png" />
+<item media-type="image/png" id="image000y"      href="image/image000y.png" />
+<item media-type="image/png" id="image001t"      href="image/image001t.png" />
+<item media-type="image/png" id="image001y"      href="image/image001y.png" />
+<item media-type="image/png" id="image002t"      href="image/image002t.png" />
+<item media-type="image/png" id="image002y"      href="image/image002y.png" />
+<item media-type="image/png" id="image003t"      href="image/image003t.png" />
+<item media-type="image/png" id="image003y"      href="image/image003y.png" />
+<item media-type="image/png" id="image004t"      href="image/image004t.png" />
+<item media-type="image/png" id="image004y"      href="image/image004y.png" />
+<item media-type="image/png" id="image005t"      href="image/image005t.png" />
+<item media-type="image/png" id="image005y"      href="image/image005y.png" />
+<item media-type="image/png" id="image006t"      href="image/image006t.png" />
+<item media-type="image/png" id="image006y"      href="image/image006y.png" />
+<item media-type="image/png" id="image007t"      href="image/image007t.png" />
+<item media-type="image/png" id="image007y"      href="image/image007y.png" />
+<item media-type="image/png" id="image008t"      href="image/image008t.png" />
+<item media-type="image/png" id="image008y"      href="image/image008y.png" />
+<item media-type="image/png" id="image009t"      href="image/image009t.png" />
+<item media-type="image/png" id="image009y"      href="image/image009y.png" />
+
+<!-- xhtml -->
+<item media-type="application/xhtml+xml" id="p-cover"       href="xhtml/p-cover.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-toc"         href="xhtml/p-toc.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-001"         href="xhtml/p-001.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-002"         href="xhtml/p-002.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-003"         href="xhtml/p-003.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-004"         href="xhtml/p-004.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-005"         href="xhtml/p-005.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-006"         href="xhtml/p-006.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-007"         href="xhtml/p-007.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-008"         href="xhtml/p-008.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-009"         href="xhtml/p-009.xhtml"/>
+<item media-type="application/xhtml+xml" id="p-010"         href="xhtml/p-010.xhtml"/>
+
+</manifest>
+
+<spine page-progression-direction="rtl">
+<itemref linear="yes" idref="p-cover"       properties="page-spread-left"/>
+<itemref linear="yes" idref="p-toc"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-001"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-002"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-003"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-004"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-005"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-006"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-007"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-008"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-009"         properties="page-spread-left"/>
+<itemref linear="yes" idref="p-010"         properties="page-spread-left"/>
+</spine>
+
+</package>
