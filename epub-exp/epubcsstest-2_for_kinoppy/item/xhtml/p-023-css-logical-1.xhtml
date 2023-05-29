@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Logical Properties and Values Level 1</title>
+<style>
+#logical-prop .OK {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 2em;
+  height: 1.5em;
+  overflow: hidden;
+}
+
+#logical-prop .OK::before {
+  content: "OK";
+  display: inline-block;
+  overflow: hidden;
+}
+
+#logical-prop .inline-size .OK::before {
+  width: 0;
+  inline-size: 2em;
+}
+
+#logical-prop .block-size .OK::before {
+  height: 0;
+  block-size: 1.5em;
+}
+
+#logical-prop .min-inline-size .OK::before {
+  width: 0;
+  min-inline-size: 2em;
+}
+
+#logical-prop .min-block-size .OK::before {
+  height: 0;
+  min-block-size: 1.5em;
+}
+
+#logical-prop .max-inline-size .OK::before {
+  max-width: 0;
+  max-inline-size: 2em;
+}
+
+#logical-prop .max-block-size .OK::before {
+  max-height: 0;
+  max-block-size: 1.5em;
+}
+
+#logical-prop .margin-block-start .OK::before {
+  margin-top: 1.5em;
+  margin-block-start: 0;
+}
+
+#logical-prop .margin-inline-start .OK::before {
+  margin-left: 2em;
+  margin-inline-start: 0;
+}
+
+#logical-prop .margin-block .OK::before {
+  margin-top: 1.5em;
+  margin-block: 0;
+}
+
+#logical-prop .margin-inline .OK::before {
+  margin-left: 2em;
+  margin-inline: 0;
+}
+
+#logical-prop .inset-block-start .OK::before {
+  position: relative;
+  top: 1.5em;
+  inset-block-start: 0;
+}
+
+#logical-prop .inset-inline-start .OK::before {
+  position: relative;
+  left: 2em;
+  inset-inline-start: 0;
+}
+
+#logical-prop .inset-block .OK::before {
+  position: relative;
+  top: 1.5em;
+  inset-block: 0;
+}
+
+#logical-prop .inset-inline .OK::before {
+  position: relative;
+  left: 2em;
+  inset-inline: 0;
+}
+
+#logical-prop .inset .OK::before {
+  position: relative;
+  left: 2em;
+  top: 1.5em;
+  inset: 0;
+}
+
+#logical-prop .padding-block-start .OK::before {
+  padding-top: 1.5em;
+  padding-block-start: 0;
+}
+
+#logical-prop .padding-inline-start .OK::before {
+  padding-left: 2em;
+  padding-inline-start: 0;
+}
+
+#logical-prop .padding-block .OK::before {
+  padding-top: 1.5em;
+  padding-block: 0;
+}
+
+#logical-prop .padding-inline .OK::before {
+  padding-left: 2em;
+  padding-inline: 0;
+}
+
+#logical-prop .border-block-start-width .OK::before {
+  border-top: 1.5em solid white;
+  border-block-start-width: 0;
+}
+
+#logical-prop .border-inline-start-width .OK::before {
+  border-left: 2em solid white;
+  border-inline-start-width: 0;
+}
+
+#logical-prop .border-block-width .OK::before {
+  border-top: 1.5em solid white;
+  border-block-width: 0;
+}
+
+#logical-prop .border-inline-width .OK::before {
+  border-left: 2em solid white;
+  border-inline-width: 0;
+}
+
+#logical-prop .border-block .OK::before {
+  border-top: 1.5em solid white;
+  border-block: none;
+}
+
+#logical-prop .border-inline .OK::before {
+  border-left: 2em solid white;
+  border-inline: none;
+}
+
+</style>
+</head>
+<body>
+  <h1 id="toc-DBCD4994D383476C96D5F3C237C6F56C">CSS Logical Properties and Values Level 1</h1>
+  <section id="logical-prop">
+    <h2 id="toc-DC99CAA4081B4B74A4E32FA862E42903">論理プロパティ</h2>
+    <section class="inline-size">
+      <h3>inline-size</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="block-size">
+      <h3>block-size</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="min-inline-size">
+      <h3>min-inline-size</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="min-block-size">
+      <h3>min-block-size</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="max-inline-size">
+      <h3>max-inline-size</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="max-block-size">
+      <h3>max-block-size</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="margin-block-start">
+      <h3>margin-block-start</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="margin-inline-start">
+      <h3>margin-inline-start</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="margin-block">
+      <h3>margin-block</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="margin-inline">
+      <h3>margin-inline</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="inset-block-start">
+      <h3>inset-block-start</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="inset-inline-start">
+      <h3>inset-inline-start</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="inset-block">
+      <h3>inset-block</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="inset-inline">
+      <h3>inset-inline</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="inset">
+      <h3>inset</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="padding-block-start">
+      <h3>padding-block-start</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="padding-inline-start">
+      <h3>padding-inline-start</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="padding-block">
+      <h3>padding-block</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="padding-inline">
+      <h3>padding-inline</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="border-block-start-width">
+      <h3>border-block-start-width</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="border-inline-start-width">
+      <h3>border-inline-start-width</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="border-block-width">
+      <h3>border-block-width</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="border-inline-width">
+      <h3>border-inline-width</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="border-block">
+      <h3>border-block</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+    <section class="border-inline">
+      <h3>border-inline</h3>
+      <ul>
+        <li><span class="OK"></span></li>
+      </ul>
+    </section>
+  </section>
+</body>
+</html>
