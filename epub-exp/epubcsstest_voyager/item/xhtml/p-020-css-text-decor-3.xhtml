@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Text Decoration Level 3</title>
+<style>
+.test {
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+#text-decor-line-style-color .test {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: silver;
+}
+#text-underline-position .vertical-text {
+  writing-mode: vertical-rl;
+}
+#text-underline-position .test {
+  text-decoration: underline;
+}
+#text-underline-position .test .right {
+  text-underline-position: right;
+}
+#text-underline-position .test .left {
+  text-underline-position: left;
+}
+#text-emphasis .test.longhand {
+  text-emphasis-style: circle;
+  text-emphasis-color: silver;
+}
+#text-emphasis .test.shorthand {
+  text-emphasis: circle silver;
+}
+#text-emphasis-position .test {
+  text-emphasis: circle;
+}
+#text-emphasis-position .test.over {
+  text-emphasis-position: over;
+}
+#text-emphasis-position .test.under {
+  text-emphasis-position: under;
+}
+</style>
+</head>
+<body>
+  <h1 id="toc-76FA122F3C9C446E9A22C1A60692F5AD">CSS Text Decoration Level 3</h1>
+  <section id="text-decor-line-style-color">
+    <h2 id="toc-08CBAD53C17B41CD8F714EFB56540BB0">text-decoration-line, text-decoration-style, text-decoration-color プロパティ</h2>
+    <div class="test">The quick brown fox jumps over a lazy dog.</div>
+    <ul>
+      <li>灰色の波線のアンダーラインが引かれていればOK</li>
+    </ul>
+  </section>
+  <section id="text-underline-position">
+    <h2 id="toc-C9A7C6A0577D49758FCF000092DF8691">text-underline-position プロパティ</h2>
+    <div class="test vertical-text">
+      <div class="right">右傍線</div>
+      <div class="left">左傍線</div>
+    </div>
+    <ul>
+      <li>右傍線・左傍線が正しく右と左に引かれていればOK</li>
+    </ul>
+  </section>
+  <section id="text-emphasis">
+    <h2 id="toc-20D2A9DB3595459ABA31523EFD0600BA">text-emphasis-color, text-emphasis-style, text-emphasis プロパティ</h2>
+    <div class="test longhand">圏点</div>
+    <div class="test shorthand">圏点</div>
+    <ul>
+      <li>上の2つとも灰色の丸い圏点が付いていればOK</li>
+    </ul>
+  </section>
+  <section id="text-emphasis-position">
+    <h2 id="toc-4A4039D0CCE44A34870DCAEEE8D7ECDC">text-emphasis-position プロパティ</h2>
+    <div class="test over">上圏点</div>
+    <div class="test under">下圏点</div>
+    <ul>
+      <li>上圏点・下圏点が正しく上と下に付いていればOK</li>
+    </ul>
+  </section>
+</body>
+</html>

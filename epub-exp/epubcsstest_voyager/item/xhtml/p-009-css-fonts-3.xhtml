@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Fonts Level 3</title>
+<style>
+@font-face {
+  font-family: "test";
+  src: url(../fonts/CrimsonText-Regular.ttf);
+}
+
+@font-face {
+  font-family: "test";
+  src: url(../fonts/ahem.ttf);
+  unicode-range: U+002A; /* * */
+}
+
+.test {
+  text-indent: 1em;
+  font-size: 1.5em;
+  font-family: "test", monospace;
+}
+.test.monospace {
+  font-family: monospace;
+}
+.test.kerning.none {
+  font-kerning: none;
+}
+.test.kerning.normal {
+  font-kerning: normal;
+}
+.test.font-variant.no-lig {
+  font-variant: no-common-ligatures;
+}
+.test.font-variant.lig {
+  font-variant: common-ligatures;
+}
+.test.font-feature-settings.no-lig {
+  font-feature-settings: "liga" off, "clig" off;
+}
+.test.font-feature-settings.lig {
+  font-feature-settings: "liga" on, "clig" on;
+}
+</style>
+</head>
+<body>
+  <h1 id="toc-6494F70EA8EB406099BC8A5DEB395032">CSS Fonts Level 3</h1>
+  <section id="font-face">
+    <h2 id="toc-FB616BED7B5746D2A5C3232A3B8E4AFB">@font-face ルール</h2>
+    <div class="test monospace">The quick brown fox jumps over the lazy dog.</div>
+    <div class="test">The quick brown fox jumps over the lazy dog.</div>
+    <ul>
+      <li>上の2行が違うフォント（等幅フォントとプロポーショナルなセリフフォント）で表示されていればOK</li>
+    </ul>
+  </section>
+  <section id="unicode-range">
+    <h2 id="toc-3EAA88794E054A7695945B221E2E08DC">unicode-range 記述子</h2>
+    <div class="test">*The quick brown fox jumps over the lazy dog.</div>
+    <ul>
+      <li>上の行の先頭にだけ黒四角が見えればOK</li>
+    </ul>
+  </section>
+  <section id="font-kerning">
+    <h2 id="toc-08229BDBAE1A4FD29B977B6048C0AF7A">font-kerning プロパティ</h2>
+    <div class="test kerning none">*AVAWAYA*</div>
+    <div class="test kerning normal">*AVAWAYA*</div>
+    <ul>
+      <li>上の2行のうち2行目だけカーニングあり（字間が詰まっている）ならOK</li>
+    </ul>
+  </section>
+  <section id="font-variant">
+    <h2 id="toc-D77BFA4FE9CF425C9023502FF8101307">font-variant プロパティ</h2>
+    <div class="test font-variant no-lig">Office</div>
+    <div class="test font-variant lig">Office</div>
+    <ul>
+      <li>上の2行のうち2行目だけ「ffi」が合字（リガチャ）になっていればOK</li>
+    </ul>
+  </section>
+  <section id="font-feature-settings">
+    <h2 id="toc-DA0CD680F24A4102B6F21D13160C3F26">font-feature-settings プロパティ</h2>
+    <div class="test font-feature-settings no-lig">Office</div>
+    <div class="test font-feature-settings lig">Office</div>
+    <ul>
+      <li>上の2行のうち2行目だけ「ffi」が合字（リガチャ）になっていればOK</li>
+    </ul>
+  </section>
+</body>
+</html>

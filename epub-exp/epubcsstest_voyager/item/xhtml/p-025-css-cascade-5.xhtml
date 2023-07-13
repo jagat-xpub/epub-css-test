@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Cascading and Inheritance Level 5</title>
+<style>
+.OK {
+  visibility: hidden !important;
+}
+@layer test {
+  #at-layer .OK {
+    visibility: visible !important;
+  }
+}
+</style>
+</head>
+<body>
+  <h1 id="toc-7C21F9AFE65042ADA900DD60BFC81D31">CSS Cascading and Inheritance Level 5</h1>
+  <section id="at-layer">
+    <h2 id="toc-32D89D4C79E04D2DBC6D9925151E55B4">@layer ルール</h2>
+    <ul>
+      <li><span class="OK">OK</span></li>
+    </ul>
+  </section>
+</body>
+</html>
