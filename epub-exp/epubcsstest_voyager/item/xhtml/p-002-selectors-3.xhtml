@@ -5,79 +5,98 @@
 <title>Selectors Level 3</title>
 <style>
 .OK {
-  visibility: hidden;
+  color: white;
 }
 
 #attr-substring [data-test^="AB"] .OK {
-  visibility: visible;
+  color: black;
 }
 #attr-substring [data-test$="GH"] .OK {
-  visibility: visible;
+  color: black;
 }
 #attr-substring [data-test*="JK"] .OK {
-  visibility: visible;
+  color: black;
 }
 
 :root #root-pseudo .OK {
-  visibility: visible;
+  color: black;
 }
 
 #nth-child .nc:nth-child(1) .OK {
-  visibility: visible;
+  color: black;
 }
 #nth-child .nlc:nth-last-child(3) .OK {
-  visibility: visible;
+  color: black;
 }
 #nth-child .nt:nth-of-type(3) .OK {
-  visibility: visible;
+  color: black;
 }
 #nth-child .nlt:nth-last-of-type(1) .OK {
-  visibility: visible;
+  color: black;
 }
 
 #last-child .lc .OK:last-child {
-  visibility: visible;
+  color: black;
 }
 #last-child .oc .OK:only-child {
-  visibility: visible;
+  color: black;
 }
 #last-child .ft .OK:first-of-type {
-  visibility: visible;
+  color: black;
 }
 #last-child .lt .OK:last-of-type {
-  visibility: visible;
+  color: black;
 }
 #last-child .ot .OK:only-of-type {
-  visibility: visible;
+  color: black;
 }
 
 #empty-pseudo :empty + .OK {
-  visibility: visible;
+  color: black;
 }
 
 #not-pseudo .OK:not(.NG) {
-  visibility: visible;
+  color: black;
 }
 
 #pseudo-elements .fln .OK::first-line {
-  visibility: visible;
+  color: black;
 }
 #pseudo-elements .flt .OK span {
-  display: inline-block;
+  display: block;
 }
 #pseudo-elements .flt .OK span::first-letter {
-  visibility: visible;
+  color: black;
 }
 #pseudo-elements .bf .OK::before {
   content: "OK";
-  visibility: visible;
+  color: black;
 }
 #pseudo-elements .af .OK::after {
   content: "OK";
-  visibility: visible;
+  color: black;
 }
+
+#pseudo-elements .fln1 .OK:first-line {
+  color: black;
+}
+#pseudo-elements .flt1 .OK span {
+  display: block;
+}
+#pseudo-elements .flt1 .OK span:first-letter {
+  color: black;
+}
+#pseudo-elements .bf1 .OK:before {
+  content: "OK";
+  color: black;
+}
+#pseudo-elements .af1 .OK:after {
+  content: "OK";
+  color: black;
+}
+
 #subsequent .E ~ .F > .OK {
-  visibility: visible;
+  color: black;
 }
 </style>
 </head>
@@ -86,40 +105,40 @@
   <section id="attr-substring">
     <h2 id="toc-FA36721B98524B3E8A291FFB76A547CC">部分文字列マッチング属性セレクタ <code>[att^=val]</code>, <code>[att$=val]</code>, <code>[att*=val]</code></h2>
     <ul>
-      <li data-test="ABCD"><span class="OK">OK</span></li>
-      <li data-test="EFGH"><span class="OK">OK</span></li>
-      <li data-test="IJKL"><span class="OK">OK</span></li>
+      <li data-test="ABCD">・<span class="OK">OK</span></li>
+      <li data-test="EFGH">・<span class="OK">OK</span></li>
+      <li data-test="IJKL">・<span class="OK">OK</span></li>
     </ul>
   </section>
   <section id="root-pseudo">
     <h2 id="toc-6852F1C43A2F4911BBCEA582CA62113E">:root 擬似クラス</h2>
     <ul>
-      <li><span class="OK">OK</span></li>
+      <li>・<span class="OK">OK</span></li>
     </ul>
   </section>
   <section id="nth-child">
     <h2 id="toc-F01DD2300E4F46FFA3F04200298A4F2D">:nth-child(), :nth-last-child(), :nth-of-type(), :nth-last-of-type() 擬似クラス</h2>
     <ul>
-      <li class="nc"><span class="OK">OK</span></li>
-      <li class="nlc"><span class="OK">OK</span></li>
-      <li class="nt"><span class="OK">OK</span></li>
-      <li class="nlt"><span class="OK">OK</span></li>
+      <li class="nc">・<span class="OK">OK</span></li>
+      <li class="nlc">・<span class="OK">OK</span></li>
+      <li class="nt">・<span class="OK">OK</span></li>
+      <li class="nlt">・<span class="OK">OK</span></li>
     </ul>
   </section>
   <section id="last-child">
     <h2 id="toc-B6CE865691E84075BB3A772D8BD8CBED">:last-child, :only-child, :first-of-type, :last-of-type, :only-of-type 擬似クラス</h2>
     <ul>
-      <li class="lc"><span class="OK">OK</span></li>
-      <li class="oc"><span class="OK">OK</span></li>
-      <li class="ft"><span class="OK">OK</span></li>
-      <li class="lt"><span class="OK">OK</span></li>
-      <li class="ot"><span class="OK">OK</span></li>
+      <li class="lc">・<span class="OK">OK</span></li>
+      <li class="oc">・<span class="OK">OK</span></li>
+      <li class="ft">・<span class="OK">OK</span></li>
+      <li class="lt">・<span class="OK">OK</span></li>
+      <li class="ot">・<span class="OK">OK</span></li>
     </ul>
   </section>
   <section id="empty-pseudo">
     <h2 id="toc-FD784D1E8CC341B2ACEC5E5381E4FA8C">:empty 擬似クラス</h2>
     <ul>
-      <li>
+      <li>・
         <span></span>
         <span class="OK">OK</span>
       </li>
@@ -128,21 +147,28 @@
   <section id="not-pseudo">
     <h2 id="toc-27111962A6B24C83AEECC29B623A8C51">:not 擬似クラス</h2>
     <ul>
-      <li><span class="OK">OK</span></li>
+      <li>・<span class="OK">OK</span></li>
     </ul>
   </section>
   <section id="pseudo-elements">
     <h2 id="toc-D22B496F3A22476F9C3FD5FE5C2A4350">::first-line, ::first-letter, ::before, ::after 擬似要素</h2>
     <ul>
-      <li class="fln"><div class="OK">OK</div></li>
-      <li class="flt"><div class="OK"><span>O</span><span>K</span></div></li>
-      <li class="bf"><div class="OK"></div></li>
-      <li class="af"><div class="OK"></div></li>
+      <li class="fln">・<div class="OK">OK</div></li>
+      <li class="flt">・<div class="OK"><span>O</span><span>K</span></div></li>
+      <li class="bf">・<div class="OK"></div></li>
+      <li class="af">・<div class="OK"></div></li>
+    </ul>
+    <h3>参考に、コロン1つの形式 :first-line, :first-letter, :before, :after 擬似要素</h3>
+    <ul>
+      <li class="fln1">・<div class="OK">OK</div></li>
+      <li class="flt1">・<div class="OK"><span>O</span><span>K</span></div></li>
+      <li class="bf1">・<div class="OK"></div></li>
+      <li class="af1">・<div class="OK"></div></li>
     </ul>
     <section id="subsequent">
       <h2 id="toc-65224E930BF142B3ADFF67A2AB72073B">後続兄弟結合子 <code>E ~ F</code></h2>
       <ul>
-        <li>
+        <li>・
           <span class="E"></span>
           <span></span>
           <span class="F"><span class="OK">OK</span></span>
