@@ -7,6 +7,9 @@
 .OK {
   color: white;
 }
+.NotOK {
+  color: white;
+}
 
 #attr-substring [data-test^="AB"] .OK {
   color: black;
@@ -62,11 +65,17 @@
 #pseudo-elements .fln .OK::first-line {
   color: black;
 }
+#pseudo-elements .fln .OK::unknownpseudo {
+  color: white;
+}
 #pseudo-elements .flt .OK span {
   display: block;
 }
 #pseudo-elements .flt .OK span::first-letter {
   color: black;
+}
+#pseudo-elements .flt .OK span::unknownpseudo {
+  color: white;
 }
 #pseudo-elements .bf .OK::before {
   content: "OK";
@@ -80,11 +89,17 @@
 #pseudo-elements .fln1 .OK:first-line {
   color: black;
 }
+#pseudo-elements .fln1 .OK:unknownpseudo {
+  color: white;
+}
 #pseudo-elements .flt1 .OK span {
   display: block;
 }
 #pseudo-elements .flt1 .OK span:first-letter {
   color: black;
+}
+#pseudo-elements .flt1 .OK span.OK::unknownpseudo {
+  color: white;
 }
 #pseudo-elements .bf1 .OK:before {
   content: "OK";
@@ -105,34 +120,34 @@
   <section id="attr-substring">
     <h2 id="toc-FA36721B98524B3E8A291FFB76A547CC">部分文字列マッチング属性セレクタ <code>[att^=val]</code>, <code>[att$=val]</code>, <code>[att*=val]</code></h2>
     <ul>
-      <li data-test="ABCD">・<span class="OK">OK</span></li>
-      <li data-test="EFGH">・<span class="OK">OK</span></li>
-      <li data-test="IJKL">・<span class="OK">OK</span></li>
+      <li data-test="ABCD">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+      <li data-test="EFGH">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+      <li data-test="IJKL">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
   <section id="root-pseudo">
     <h2 id="toc-6852F1C43A2F4911BBCEA582CA62113E">:root 擬似クラス</h2>
     <ul>
-      <li>・<span class="OK">OK</span></li>
+      <li>・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
   <section id="nth-child">
     <h2 id="toc-F01DD2300E4F46FFA3F04200298A4F2D">:nth-child(), :nth-last-child(), :nth-of-type(), :nth-last-of-type() 擬似クラス</h2>
     <ul>
-      <li class="nc">・<span class="OK">OK</span></li>
-      <li class="nlc">・<span class="OK">OK</span></li>
-      <li class="nt">・<span class="OK">OK</span></li>
-      <li class="nlt">・<span class="OK">OK</span></li>
+      <li class="nc">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+      <li class="nlc">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+      <li class="nt">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+      <li class="nlt">・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
   <section id="last-child">
     <h2 id="toc-B6CE865691E84075BB3A772D8BD8CBED">:last-child, :only-child, :first-of-type, :last-of-type, :only-of-type 擬似クラス</h2>
     <ul>
-      <li class="lc">・<span class="OK">OK</span></li>
-      <li class="oc">・<span class="OK">OK</span></li>
-      <li class="ft">・<span class="OK">OK</span></li>
-      <li class="lt">・<span class="OK">OK</span></li>
-      <li class="ot">・<span class="OK">OK</span></li>
+      <li class="lc">・<span class="OK">OK</span></li><span class="NotOK">ではなくてNG</span>
+      <li class="oc">・<span class="OK">OK</span></li><span class="NotOK">ではなくてNG</span>
+      <li class="ft">・<span class="OK">OK</span></li><span class="NotOK">ではなくてNG</span>
+      <li class="lt">・<span class="OK">OK</span></li><span class="NotOK">ではなくてNG</span>
+      <li class="ot">・<span class="OK">OK</span></li><span class="NotOK">ではなくてNG</span>
     </ul>
   </section>
   <section id="empty-pseudo">
@@ -140,30 +155,50 @@
     <ul>
       <li>・
         <span></span>
-        <span class="OK">OK</span>
+        <span class="OK">OK</span><span class="NotOK">ではなくてNG</span>
       </li>
     </ul>
   </section>
   <section id="not-pseudo">
     <h2 id="toc-27111962A6B24C83AEECC29B623A8C51">:not 擬似クラス</h2>
     <ul>
-      <li>・<span class="OK">OK</span></li>
+      <li>・<span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
   <section id="pseudo-elements">
     <h2 id="toc-D22B496F3A22476F9C3FD5FE5C2A4350">::first-line, ::first-letter, ::before, ::after 擬似要素</h2>
+    <h3>::first-line</h3>
     <ul>
-      <li class="fln">・<div class="OK">OK</div></li>
-      <li class="flt">・<div class="OK"><span>O</span><span>K</span></div></li>
-      <li class="bf">・<div class="OK"></div></li>
-      <li class="af">・<div class="OK"></div></li>
+      <li class="fln"><div class="OK">OK<br/>ではなくてNG</div></li>
+    </ul>
+    <h3>::first-letter</h3>
+    <ul>
+      <li class="flt"><div class="OK"><span>O</span><span>KではなくてNG</span></div></li>
+    </ul>
+    <h3>::before</h3>
+    <ul>
+      <li class="bf"><div class="OK">・</div></li>
+    </ul>
+    <h3>::after</h3>
+    <ul>
+      <li class="af"><div class="OK">・</div></li>
     </ul>
     <h3>参考に、コロン1つの形式 :first-line, :first-letter, :before, :after 擬似要素</h3>
+    <h4>:first-line</h4>
     <ul>
-      <li class="fln1">・<div class="OK">OK</div></li>
-      <li class="flt1">・<div class="OK"><span>O</span><span>K</span></div></li>
-      <li class="bf1">・<div class="OK"></div></li>
-      <li class="af1">・<div class="OK"></div></li>
+      <li class="fln1"><div class="OK">OK<br/>ではなくてNG</div></li>
+    </ul>
+    <h4>:first-letter</h4>
+    <ul>
+      <li class="flt1"><div class="OK"><span>O</span><span>KではなくてNG</span></div></li>
+    </ul>
+    <h4>:before</h4>
+    <ul>
+      <li class="bf1"><div class="OK">・</div></li>
+    </ul>
+    <h4>:after</h4>
+    <ul>
+      <li class="af1"><div class="OK">・</div></li>
     </ul>
     <section id="subsequent">
       <h2 id="toc-65224E930BF142B3ADFF67A2AB72073B">後続兄弟結合子 <code>E ~ F</code></h2>
@@ -171,7 +206,7 @@
         <li>・
           <span class="E"></span>
           <span></span>
-          <span class="F"><span class="OK">OK</span></span>
+          <span class="F"><span class="OK">OK</span><span class="NotOK">ではなくてNG</span></span>
         </li>
       </ul>
     </section>
