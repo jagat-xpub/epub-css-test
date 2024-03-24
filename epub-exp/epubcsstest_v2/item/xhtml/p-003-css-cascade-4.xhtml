@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Cascading and Inheritance Level 4</title>
+<style>
+.OK {
+  color: white;
+}
+
+#all .OK {
+  all: inherit;
+}
+
+#defaulting .initial .OK {
+  color: initial;
+}
+#defaulting .unset .OK {
+  color: unset;
+}
+#defaulting .revert .OK {
+  color: revert;
+}
+</style>
+</head>
+<body>
+  <h1 id="toc-CC10599876BA4E7C9B9EA00443C4528E">CSS Cascading and Inheritance Level 4</h1>
+  <section id="all">
+    <h2 id="toc-7E9E9F59731E4162B0886ED13F626C09">all プロパティ</h2>
+    <ul>
+      <li>・<span><span class="OK">OK</span></span></li>
+    </ul>
+  </section>
+  <section id="defaulting">
+    <h2 id="toc-DB00BA91E1AE4DA88B757B0E17402327">プロパティの値 initial, unset, revert</h2>
+    <ul>
+      <li>・<span class="initial"><span class="OK">OK</span></span></li>
+      <li>・<span class="unset"><span class="OK">OK</span></span></li>
+      <li>・<span class="revert"><span class="OK">OK</span></span></li>
+    </ul>
+  </section>
+</body>
+</html>
