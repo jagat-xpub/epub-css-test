@@ -6,18 +6,22 @@
 <style>
 .OK {
   visibility: hidden;
+  color: white;
 }
 
 #is-pseudo :is(.OK) {
   visibility: visible;
+  color: black;
 }
 
 #where-pseudo :where(.OK) {
   visibility: visible;
+  color: black;
 }
 
 #has-pseudo :has(+ .test) {
   visibility: visible;
+  color: black;
 }
 
 </style>
