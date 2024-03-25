@@ -15,89 +15,86 @@
 
 #attr-substring [data-test^="AB"] .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #attr-substring [data-test$="GH"] .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #attr-substring [data-test*="JK"] .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 
 :root #root-pseudo .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 
 #nth-child .nc:nth-child(1) .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #nth-child .nlc:nth-last-child(3) .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #nth-child .nt:nth-of-type(3) .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #nth-child .nlt:nth-last-of-type(1) .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 
 #last-child .lc .OK:last-child {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #last-child .oc .OK:only-child {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #last-child .ft .OK:first-of-type {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #last-child .lt .OK:last-of-type {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #last-child .ot .OK:only-of-type {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 
 #empty-pseudo :empty + .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 
 #not-pseudo .OK:not(.NG) {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 
 #pseudo-elements .fln .test2::first-line {
   font-size: 200%;
-}
-#pseudo-elements .flt .OK span {
-  display: block;
 }
 #pseudo-elements .flt .test2::first-letter {
   font-size: 200%;
 }
 #pseudo-elements .bf .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #pseudo-elements .bf .OK::before {
   content: "OK";
 }
 #pseudo-elements .af .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 #pseudo-elements .af .OK::after {
   content: "OK";
@@ -105,7 +102,7 @@
 
 #subsequent .E ~ .F > .OK {
   visibility: visible;
-  color: black;
+  color: inherit;
 }
 </style>
 </head>
