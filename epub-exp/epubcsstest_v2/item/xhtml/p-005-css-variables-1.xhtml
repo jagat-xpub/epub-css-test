@@ -5,14 +5,17 @@
 <title>CSS Custom Properties for Cascading Variables Module Level 1</title>
 <style>
 .OK {
+  visibility: hidden;
   color: white;
 }
 
 #css-variable {
-  --OK: black;
+  --OK-visibility: visible;
+  --OK-color: black;
 }
 #css-variable .OK {
-  color: var(--OK);
+  visibility: var(--OK-visibility);
+  color: var(--OK-color);
 }
 
 </style>

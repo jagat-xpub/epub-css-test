@@ -10,8 +10,11 @@
   border: 2px solid blue;
 }
 
-#length-units .intro .OK {
+#length-units .intro .OK.good {
   width: 10em;
+}
+#length-units .intro .OK.bad {
+  width: auto;
 }
 
 #length-units .ch .OK {
@@ -43,9 +46,13 @@
     <h2 id="toc-9D3E5225B23F4BA0ADA8A5301797DBFA">長さの単位</h2>
     <section class="intro">
       <h3>凡例</h3>
-      <p>以下、次のように青い横長の長方形の枠があって、その中に「ok?」が左寄せで入っていればOK。</p>
+      <p>以下、次のように横長の長方形の枠があって、その中に「ok?」が左寄せで入っていればOK。</p>
       <ul>
-        <li><span class="OK">ok?</span></li>
+        <li><span class="OK good">ok?</span></li>
+      </ul>
+      <p>長方形の横幅はこの例と違ってよい。ただし、次のようにページ幅いっぱいならばNG。</p>
+      <ul>
+        <li><span class="OK bad">ok?</span></li>
       </ul>
     </section>
     <section class="ch">

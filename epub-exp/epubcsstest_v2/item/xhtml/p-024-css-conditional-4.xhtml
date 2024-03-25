@@ -5,17 +5,20 @@
 <title>CSS Conditional Rules Level 4</title>
 <style>
 .OK {
+  visibility: hidden;
   color: white;
 }
 
 @supports selector(E > F) {
   #at-supports-selector .OK {
+    visibility: visible;
     color: black;
   }
 }
 
 @supports selector(:::unknownselector) {
   #at-supports-selector .OK {
+    visibility: hidden;
     color: white;
   }
 }

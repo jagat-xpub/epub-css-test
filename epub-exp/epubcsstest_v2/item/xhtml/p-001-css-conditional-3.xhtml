@@ -5,17 +5,20 @@
 <title>CSS Conditional Rules Level 3</title>
 <style>
 .OK {
+  visibility: hidden;
   color: white;
 }
 
 @supports (margin: 0) {
   #at-supports .OK {
+    visibility: visible;
     color: black;
   }
 }
 
 @supports (unknownprop: 0) {
   #at-supports .OK {
+    visibility: hidden;
     color: white;
   }
 }
