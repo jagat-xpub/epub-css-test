@@ -5,15 +5,18 @@
 <title>CSS Cascading and Inheritance Level 5</title>
 <style>
 .OK {
+  visibility: hidden !important;
   color: white !important;
 }
 @layer test {
   #at-layer .OK {
+    visibility: visible !important;
     color: black !important;
   }
 }
 @layer :invalidlayer {
   #at-layer .OK {
+    visibility: hidden !important;
     color: white !important;
   }
 }
