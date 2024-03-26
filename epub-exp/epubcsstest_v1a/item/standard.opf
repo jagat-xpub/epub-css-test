@@ -5,8 +5,8 @@
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 <!-- 作品名 -->
-<dc:title id="title">EPUBリーダーのCSS仕様適合性テスト　Voyager用</dc:title>
-<meta refines="#title" property="file-as">イーパブリーダーノシーエスエスシヨウテキゴウセイテスト　ボイジャーヨウ</meta>
+<dc:title id="title">EPUBリーダーのCSS仕様適合性テスト　V1a用</dc:title>
+<meta refines="#title" property="file-as">イーパブリーダーノシーエスエスシヨウテキゴウセイテスト　V1a</meta>
 
 <!-- 著者名 -->
 <dc:creator id="creator01">XMLパブリッシング準研究会</dc:creator>
