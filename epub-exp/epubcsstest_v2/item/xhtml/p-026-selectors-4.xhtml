@@ -8,6 +8,10 @@
   visibility: hidden;
   color: white;
 }
+.NotOK {
+  visibility: hidden;
+  color: white;
+}
 
 #is-pseudo :is(.OK) {
   visibility: visible;
@@ -32,19 +36,19 @@
   <section id="is-pseudo">
     <h2 id="toc-3B80385B84A04556B5FF44BBCC9CFCC8">:is() 擬似クラス</h2>
     <ul>
-      <li><span class="OK">OK</span></li>
+      <li><span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
   <section id="where-pseudo">
     <h2 id="toc-814403E0BBED45A4A6B549955486F050">:where() 擬似クラス</h2>
     <ul>
-      <li><span class="OK">OK</span></li>
+      <li><span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
   <section id="has-pseudo">
     <h2 id="toc-2198CA7B6D6C44ECAB608C08315BF65E">:has() 擬似クラス</h2>
     <ul>
-      <li><span class="OK">OK</span><span class="test"></span></li>
+      <li><span class="OK">OK</span><span class="test"></span><span class="NotOK">ではなくてNG</span></li>
     </ul>
   </section>
 </body>
