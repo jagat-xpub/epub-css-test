@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="en">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="bookid">urn:uuid:ecbc8cfa-5411-4ce4-a1f7-fa05746f376b</dc:identifier>
+    <dc:title>Show UA string</dc:title>
+    <dc:language>en</dc:language>
+    <meta property="dcterms:modified">2024-04-04T02:37:07Z</meta>
+  </metadata>
+  <manifest>
+    <item id="show-ua-stringxhtml" href="show-ua-string.xhtml" media-type="application/xhtml+xml" properties="nav scripted"></item>
+  </manifest>
+  <spine>
+    <itemref idref="show-ua-stringxhtml"></itemref>
+  </spine>
+</package>
