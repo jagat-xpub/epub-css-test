@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Color Level 4</title>
+<style>
+.OK {
+  color: white;
+}
+
+#opacity .test {
+  background-color: black;
+  opacity: 0.1;
+}
+
+#rgb .OK {
+  color: rgb(0 0 0 / 1);
+}
+
+#hex .hex8 .OK {
+  color: #000000ff;
+}
+
+#hex .hex4 .OK {
+  color: #000f;
+}
+
+#hex .hex8 .test2 {
+  background-color: #88FF4488;
+}
+#hex .hex4 .test2 {
+  background-color: #8F48;
+}
+#hex .test2-ref {
+  background-color: rgba(136, 255, 68, .533);
+}
+#hex .test2-nref {
+  background-color: #88FF44;
+}
+
+#hsl .OK {
+  color: hsl(120 100% 0% / 1);
+}
+
+#hwb .OK {
+  color: hwb(120 0% 100% / 1);
+}
+</style>
+</head>
+<body>
+  <h1 id="toc-B5BC2F793E9C4EEDBADD47E4B00906AD">CSS Color Level 4</h1>
+  <section id="opacity">
+    <h2 id="toc-5587961965A14C5DAE49D9DEE831526F">opacity プロパティ</h2>
+    <ul>
+      <li>・<span class="test">TEST</span>が真っ黒ではなくて薄い灰色ならばOK</li>
+    </ul>
+  </section>
+  <section id="rgb">
+    <h2 id="toc-1DE70D1B4FB042AEBC949D7EAF1B78F5">rgb() 関数のコンマなし形式　例: rgb(0 255 0 / .5)</h2>
+    <ul>
+      <li>・<span class="OK">OK</span></li>
+    </ul>
+  </section>
+  <section id="hex">
+    <h2 id="toc-73397E4E41014637A3706F8F50079C5C">16進数のRGBA形式（8桁、4桁）　例: #88FF4488, #8F48</h2>
+    <ul>
+      <li class="hex8">・<span class="OK">OK?</span>　<span class="test2">#88FF4488</span>と<span class="test2-ref">rgba(136, 255, 68, .533)</span>が同じ背景色で、<span class="test2-nref">#88FF44</span>よりも透明に近いならOK</li>
+      <li class="hex4">・<span class="OK">OK?</span>　<span class="test2">#8F48</span>と<span class="test2-ref">rgba(136, 255, 68, .533)</span>が同じ背景色で、<span class="test2-nref">#88FF44</span>よりも透明に近いならOK</li>
+    </ul>
+  </section>
+  <section id="hsl">
+    <h2 id="toc-0A9F67934F2A419589B7352D1E1E7A2C">hsl() 関数</h2>
+    <ul>
+      <li>・<span class="OK">OK</span></li>
+    </ul>
+  </section>
+  <section id="hwb">
+    <h2 id="toc-A1087E54FA8441E7AD20CBA4D3F03925">hwb() 関数</h2>
+    <ul>
+      <li>・<span class="OK">OK</span></li>
+    </ul>
+  </section>
+</body>
+</html>

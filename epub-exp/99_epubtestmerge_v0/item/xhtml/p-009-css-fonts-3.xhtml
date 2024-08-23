@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Fonts Level 3</title>
+<style>
+@font-face {
+  font-family: "test";
+  src: url(../fonts/CrimsonText-Regular.ttf);
+}
+
+@font-face {
+  font-family: "test";
+  src: url(../fonts/ahem.ttf);
+  unicode-range: U+002A; /* * */
+}
+@font-face {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+}
+@font-face {
+  font-family: "korean";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerifK-VF.otf);
+}
+@font-face {
+  font-family: "koreanrange";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerifK-VF.otf);
+  unicode-range: U+1100-11FF,U+AC00-D7A3;
+}
+
+.test {
+  text-indent: 1em;
+  font-size: 1.5em;
+  font-family: "test", monospace;
+}
+.test.monospace {
+  font-family: monospace;
+}
+.test.kerning.none {
+  font-kerning: none;
+}
+.test.kerning.normal {
+  font-kerning: normal;
+}
+.test.font-variant.no-lig {
+  font-variant: no-common-ligatures;
+}
+.test.font-variant.lig {
+  font-variant: common-ligatures;
+}
+.test.font-feature-settings.no-lig {
+  font-feature-settings: "liga" off, "clig" off;
+}
+.test.font-feature-settings.lig {
+  font-feature-settings: "liga" on, "clig" on;
+}
+.korean {
+  font-family: "korean";
+}
+.koreanrange {
+  font-family: "koreanrange";
+}
+.test.font-variant.lig {
+  font-variant: common-ligatures;
+}
+
+.jis90fvembed {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+  font-variant-east-asian: "jis90";
+}
+.jis90fvdevice {
+  font-variant-east-asian: "jis90";
+}
+.jis04fvembed {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+  font-variant-east-asian: "jis04";
+}
+.jis04fvdevice {
+  font-variant-east-asian: "jis04";
+}
+.jp90ffembed {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+  font-feature-settings: "jp90";
+}
+.jp90ffdevice {
+  font-feature-settings: "jp90";
+}
+.jp04ffembed {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+  font-feature-settings: "jp04";
+}
+.jp04ffdevice {
+  font-feature-settings: "jp04";
+}
+.sourcehanserif {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+}
+
+.fit {
+  display:            inline-block;
+  page-break-inside:  avoid;
+  max-height:         100%;
+  max-width:          100%;
+}
+.hltr .fit {
+  vertical-align: top;
+}
+.vrtl .fit {
+  vertical-align: baseline;
+}
+
+</style>
+</head>
+<body>
+  <h1 id="toc-6494F70EA8EB406099BC8A5DEB395032">CSS Fonts Level 3</h1>
+  <section id="font-face">
+    <h2 id="toc-FB616BED7B5746D2A5C3232A3B8E4AFB">@font-face ルール</h2>
+    <div class="test monospace">The quick brown fox jumps over the lazy dog.</div>
+    <div class="test">The quick brown fox jumps over the lazy dog.</div>
+    <ul>
+      <li>・上の2行が違うフォント（等幅フォントとプロポーショナルなセリフフォント）で表示されていればOK</li>
+    </ul>
+    <div style="margin-top:0.5em">
+    <p><span style="font-weight:bold">サンプル</span>：あいおえお<span class="korean">안녕하세요</span>かきくけこ<span class="korean">감사합니다</span>さしすせそ</p>
+    <p><img class="fit" src = "../image/fontfacesample.png" alt = "正しく表示された例" /></p>
+    </div>
+  </section>
+  <section id="unicode-range">
+    <h2 id="toc-3EAA88794E054A7695945B221E2E08DC">unicode-range 記述子</h2>
+    <div class="test">*The quick brown fox jumps over the lazy dog.</div>
+    <ul>
+      <li>・上の行の先頭にだけ黒四角が見えればOK</li>
+    </ul>
+    <div style="margin-top:0.5em">
+    <p class="koreanrange"><span style="font-weight:bold">サンプル</span>：あいおえお안녕하세요かきくけこ감사합니다さしすせそ</p>
+    <p><img class="fit" src = "../image/unicoderangesample.png" alt = "正しく表示された例" /></p>
+    </div>
+  </section>
+  <section id="font-kerning">
+    <h2 id="toc-08229BDBAE1A4FD29B977B6048C0AF7A">font-kerning プロパティ</h2>
+    <div class="test kerning none">*AVAWAYA*</div>
+    <div class="test kerning normal">*AVAWAYA*</div>
+    <ul>
+      <li>・上の2行のうち2行目だけカーニングあり（字間が詰まっている）ならOK</li>
+    </ul>
+  </section>
+  <section id="font-variant">
+    <h2 id="toc-D77BFA4FE9CF425C9023502FF8101307">font-variant プロパティ</h2>
+    <div class="test font-variant no-lig">Office</div>
+    <div class="test font-variant lig">Office</div>
+    <ul>
+      <li>・上の2行のうち2行目だけ「ffi」が合字（リガチャ）になっていればOK</li>
+    </ul>
+    <div style="margin-top:0.5em">
+	<p><span style="font-weight:bold">無指定（対照用）</span>：「辻」</p>
+	<p><span style="font-weight:bold">JIS90字形表示サンプル1（埋め込みフォントで表示）</span>：「<span class="jis90fvembed">辻</span>」←一点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS90字形表示サンプル2（デバイスフォントで表示）</span>：「<span class="jis90fvdevice">辻</span>」←一点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS2004字形表示サンプル1（埋め込みフォントで表示）</span>：「<span class="jis04fvembed">辻</span>」←二点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS2004字形表示サンプル2（デバイスフォントで表示）</span>：「<span class="jis04fvdevice">辻</span>」←二点しんにょうになっていればOK</p>
+    </div>
+  </section>
+  <section id="font-feature-settings">
+    <h2 id="toc-DA0CD680F24A4102B6F21D13160C3F26">font-feature-settings プロパティ</h2>
+    <div class="test font-feature-settings no-lig">Office</div>
+    <div class="test font-feature-settings lig">Office</div>
+    <ul>
+      <li>・上の2行のうち2行目だけ「ffi」が合字（リガチャ）になっていればOK</li>
+    </ul>
+    <div style="margin-top:0.5em">
+	<p><span style="font-weight:bold">無指定（対照用）</span>：「辻」</p>
+	<p><span style="font-weight:bold">JIS90字形表示サンプル1（埋め込みフォントで表示）</span>：「<span class="jp90ffembed">辻</span>」←一点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS90字形表示サンプル2（デバイスフォントで表示）</span>：「<span class="jp90ffdevice">辻</span>」←一点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS2004字形表示サンプル1（埋め込みフォントで表示）</span>：「<span class="jp04ffembed">辻</span>」←二点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS2004字形表示サンプル2（デバイスフォントで表示）</span>：「<span class="jp04ffdevice">辻</span>」←二点しんにょうになっていればOK</p>
+    </div>
+  </section>
+  <section id="UnicodeIVS">
+    <h2>参照（異体字表示を目的とした同種の技術として）：Unicode IVS</h2>
+    <div style="margin-top:0.5em">
+	<p><span style="font-weight:bold">無指定（対照用）</span>：「辻」</p>
+	<p><span style="font-weight:bold">JIS90字形表示サンプル1（埋め込みフォントで表示）</span>：「<span class="sourcehanserif">辻󠄀</span>」←一点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS90字形表示サンプル2（デバイスフォントで表示）</span>：「辻󠄀」←一点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS2004字形表示サンプル1（埋め込みフォントで表示）</span>：「<span class="sourcehanserif">辻󠄁</span>」←二点しんにょうになっていればOK</p>
+	<p><span style="font-weight:bold">JIS2004字形表示サンプル2（デバイスフォントで表示）</span>：「辻󠄁」←二点しんにょうになっていればOK</p>
+    </div>
+  </section>
+</body>
+</html>

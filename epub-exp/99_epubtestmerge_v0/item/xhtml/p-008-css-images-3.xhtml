@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Images Level 3</title>
+<style>
+#gradient section {
+  margin: 1em 0;
+  padding: 4px;
+}
+
+#gradient .linear {
+  background: linear-gradient(90deg, white, gray);
+}
+
+#gradient .radial {
+  background: radial-gradient(circle, gray, silver 50px, white);
+}
+
+#gradient .repeating-linear {
+  background: repeating-linear-gradient(90deg, white, silver 40px, white 50px);
+}
+
+#gradient .repeating-radial {
+  background: repeating-radial-gradient(circle, white, silver 40px, white 50px);
+}
+
+#object-fit img, #object-position img {
+  display: block;
+  width: 160px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+#object-fit .contain img {
+  object-fit: contain;
+}
+
+#object-fit .cover img {
+  object-fit: cover;
+}
+
+#object-position img {
+  object-fit: contain;
+  object-position: right;
+}
+
+</style>
+</head>
+<body>
+  <h1 id="toc-3323A69CED774B7BA5945D94824D668B">CSS Images Level 3</h1>
+  <section id="gradient">
+    <h2 id="toc-43EEE444E89845098E93CF61EC5DD95D">グラデーション関数</h2>
+    <section class="linear">
+      <h3>linear-gradient()</h3>
+      <ul>
+        <li>・背景色がグラデーションになっていればOK</li>
+      </ul>
+    </section>
+    <section class="radial">
+      <h3>radial-gradient()</h3>
+      <ul>
+        <li>・背景色が円形グラデーションになっていればOK</li>
+      </ul>
+    </section>
+    <section class="repeating-linear">
+      <h3>repeating-linear-gradient()</h3>
+      <ul>
+        <li>・背景色がグラデーションの繰り返しになっていればOK</li>
+      </ul>
+    </section>
+    <section class="repeating-radial">
+      <h3>repeating-radial-gradient()</h3>
+      <ul>
+        <li>・背景色が円形グラデーションの繰り返しになっていればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="object-fit">
+    <h2 id="toc-98F53481BDCF4434AA147F94932B801A">object-fit プロパティ</h2>
+    <section class="contain">
+      <h3>contain</h3>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+      <ul>
+        <li>・丸い顔の画像がアスペクト比を維持したまま長方形の枠に収まって左右が空いていればOK</li>
+      </ul>
+    </section>
+    <section class="cover">
+      <h3>cover</h3>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+      <ul>
+        <li>・丸い顔の画像がアスペクト比を維持したまま長方形の枠全体を埋めるように拡大されて上下が切り取られていればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="object-position">
+    <h2 id="toc-8D9906341AA5451987D54A0DCBC09292">object-position プロパティ</h2>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANAgMAAAAPhQzvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJUExURUdwTAAAAN3d3V/OussAAAABdFJOUwBA5thmAAAAOklEQVQI12NgEGVgYGDMCmBgYFu1hIFBKiuTgUFy5kwGhqxVqxwYspaBCBBLchVQTCo0E6oOrAOkFwDfEw6rvhBrUQAAAABJRU5ErkJggg==" alt="丸い顔の画像" />
+    (object-position: right)
+    <ul>
+      <li>・丸い顔の画像が長方形の枠の右端に寄っていればOK </li>
+    </ul>
+</section>
+</body>
+</html>

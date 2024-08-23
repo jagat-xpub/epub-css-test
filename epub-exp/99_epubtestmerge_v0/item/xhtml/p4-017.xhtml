@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+ xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:epub="http://www.idpf.org/2007/ops"
+ xml:lang="ja"
+ class="hltr"
+>
+<head>
+<meta charset="UTF-8"/>
+<title>EPUB内文字、画像、背景表示テスト</title>
+<link rel="stylesheet" type="text/css" href="../style/book-style.css"/>
+</head>
+<body class="p-text">
+<div class="main">
+<h4 class="ko-midashi">２．文字単位の地色の反映　（２）横組み</h4>
+<p><br/></p>
+<p>　<span class="font-090per gfont">各丸数字毎に、画像サンプルと異なったり、反映していない場合は「×」。ルビは読めない、欠落する場合は「×」</span></p>
+<p><br/></p>
+<h5 class="gfont">①Inverseと余白なし地色＋color-white（文字ゴシック）</h5>
+<p>　<span class="gfont">Inverse</span>　<span class="inverse gfont">反転文字</span></p>
+<div class="start-3em">
+<p><span class="gfont font-080per color-maroon">正しく反映した例（画像）</span>　<span class="font-110per"><img class="gaiji-wide" src="../image/hanten01_h.jpg" alt=""/></span></p>
+</div>
+<p><br/></p>
+<p>　<span class="gfont">bg-mediumvioletred</span>　<span class="bg-mediumvioletred color-white gfont">バイオレット+白文字</span></p>
+<div class="start-3em">
+<p><span class="gfont font-080per color-maroon">正しく反映した例（画像）</span>　<span class="font-110per"><img class="gaiji-wide" src="../image/violet_01_h.jpg" alt=""/></span></p>
+</div>
+<p><br/></p>
+<h5 class="gfont">②パディング0em10のInverseと地色＋color-white</h5>
+<p>　<span class="gfont">Inverse</span>　<span class="inverse gfont p-0em10">反転文字</span></p>
+<div class="start-3em">
+<p><span class="gfont font-080per color-maroon">正しく反映した例（画像）</span>　<span class="font-110per"><img class="gaiji-wide" src="../image/hanten02_h.jpg" alt=""/></span></p>
+</div>
+<p><br/></p>
+<p>　<span class="gfont">bg-mediumvioletred</span>　<span class="bg-mediumvioletred color-white gfont p-0em10">バイオレット+白文字</span></p>
+<div class="start-3em">
+<p><span class="gfont font-080per color-maroon">正しく反映した例（画像）</span>　<span class="font-110per"><img class="gaiji-wide" src="../image/violet_02_h.jpg" alt=""/></span></p>
+</div>
+<p><br/></p>
+<h5 class="gfont">③　②の後半に余白無しのbg-whiteとcolor-mediumvioletredを追加</h5>
+<p>　<span class="gfont">bg-mediumvioletred+bg-white</span>　<span class="bg-mediumvioletred gfont color-white p-0em10">バイオレット<span class="bg-white color-mediumvioletred">＋バイオレット文字</span></span></p>
+<div class="start-3em">
+<p><span class="gfont font-080per color-maroon">正しく反映した例（画像）</span>　<span class="font-110per"><img class="gaiji-wide" src="../image/violet_03_h.jpg" alt=""/></span></p>
+</div>
+<h5 class="gfont">④　地色のパディング調整でルビを含める</h5>
+<p>　<span class="gfont">Inverse+p-before-0em50</span>　<span class="inverse gfont p-before-0em50"><ruby>反転文字<rt>ルビガオヤモジヨリモスコシオオイレイ</rt></ruby></span></p>
+<div class="start-4em">
+<p><span class="gfont font-080per color-maroon">ルビの最後が少し欠けた例（画像）</span>　<span class="font-140per"><img class="gaiji-wide" src="../image/in_ruby_h.jpg" alt=""/></span></p>
+</div>
+<p><br/></p>
+<p>　<span class="gfont">bg-mediumvioletred＋p-before-0em50</span>　<span class="bg-mediumvioletred gfont color-white p-before-0em50"><ruby>超大新星<rt>ウルトラスーパーノヴァ</rt></ruby></span></p>
+<div class="start-4em">
+<p><span class="gfont font-080per color-maroon">ルビの最初が欠けた例（画像）</span>　<span class="font-140per"><img class="gaiji-wide" src="../image/ruby_bg_h.jpg" alt=""/></span></p>
+</div>
+</div>
+</body>
+</html>

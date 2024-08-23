@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>Selectors Level 4</title>
+<style>
+.OK {
+  visibility: hidden;
+  color: white;
+}
+.NotOK {
+  visibility: hidden;
+  color: white;
+}
+
+#is-pseudo :is(.OK) {
+  visibility: visible;
+  color: inherit;
+}
+
+#where-pseudo :where(.OK) {
+  visibility: visible;
+  color: inherit;
+}
+
+#has-pseudo :has(+ .test) {
+  visibility: visible;
+  color: inherit;
+}
+
+</style>
+</head>
+<body>
+<h1 class="oo-midashi" id="toc-4A39E014AACC4D489DB7394DD0815B5C">CSS Snapshot 2023 に載っていないが、最新のブラウザで利用できるもの</h1>
+  <h1 id="toc-9843C2236E094C19BBDB017538FC1EAA">Selectors Level 4</h1>
+  <section id="is-pseudo">
+    <h2 id="toc-3B80385B84A04556B5FF44BBCC9CFCC8">:is() 擬似クラス</h2>
+    <ul>
+      <li><span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+    </ul>
+  </section>
+  <section id="where-pseudo">
+    <h2 id="toc-814403E0BBED45A4A6B549955486F050">:where() 擬似クラス</h2>
+    <ul>
+      <li><span class="OK">OK</span><span class="NotOK">ではなくてNG</span></li>
+    </ul>
+  </section>
+  <section id="has-pseudo">
+    <h2 id="toc-2198CA7B6D6C44ECAB608C08315BF65E">:has() 擬似クラス</h2>
+    <ul>
+      <li><span class="OK">OK</span><span class="test"></span><span class="NotOK">ではなくてNG</span></li>
+    </ul>
+  </section>
+</body>
+</html>
