@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+ xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:epub="http://www.idpf.org/2007/ops"
+ xml:lang="ja"
+ class="vrtl"
+>
+<head>
+<meta charset="UTF-8"/>
+<title>作品名</title>
+<link rel="stylesheet" type="text/css" href="../style/book-style.css"/>
+</head>
+<body class="p-text">
+<span id="page080" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="80"/>
+<div class="main">
+
+<h2 class="oo-midashi" id="toc-167FE145-C077-4B0D-8A4B-3D88411BE753">ルビ関連表示テスト</h2>
+<p><br /></p>
+<p><span class="bold">ルビの配置位置（ruby-align／中付き肩付き）</span></p>
+<p><br /></p>
+<h4 class="ko-midashi">肩付き（ruby-align:start）</h4>
+<p><ruby style="ruby-align:start">親<rt>おや</rt></ruby><ruby style="ruby-align:start">文<rt>も</rt></ruby><ruby style="ruby-align:start">字<rt>じ</rt></ruby><ruby style="ruby-align:start">親<rt>おや</rt></ruby><ruby style="ruby-align:start">文<rt>も</rt></ruby><ruby style="ruby-align:start">字<rt>じ</rt></ruby></p>
+<p><br /></p>
+<p><br /></p>
+<h4 class="ko-midashi">中付き（ruby-align:center）</h4>
+<p><ruby style="ruby-align:center">親<rt>おや</rt></ruby><ruby style="ruby-align:center">文<rt>も</rt></ruby><ruby style="ruby-align:center">字<rt>じ</rt></ruby><ruby style="ruby-align:center">親<rt>おや</rt></ruby><ruby style="ruby-align:center">文<rt>も</rt></ruby><ruby style="ruby-align:center">字<rt>じ</rt></ruby></p>
+<p><br /></p>
+<p><br /></p>
+<h4 class="ko-midashi">両端揃え（ruby-align:space-between）</h4>
+<p><ruby style="ruby-align:space-between">親文字親文字<rt>おやもじ</rt></ruby><ruby style="ruby-align:space-between">親文字親文字<rt>おやもじ</rt></ruby></p>
+<p><ruby style="ruby-align:space-between">親文字<rt>ルビのほうがながいばあい</rt></ruby><ruby style="ruby-align:space-between">親文字<rt>ルビのほうがながいばあい</rt></ruby></p>
+<p><br /></p>
+<p><br /></p>
+<h4 class="ko-midashi">１-２-１ルール（ruby-align:space-around）</h4>
+<p><ruby style="ruby-align:space-around">親文字親文字<rt>おやもじ</rt></ruby><ruby style="ruby-align:space-around">親文字親文字<rt>おやもじ</rt></ruby></p>
+<p><br /></p>
+<p style="font-size:0.85em">※親文字に対するルビの配置位置を親文字の幅全体に対して両端のスペースが１、中間のスペースが２の割合になることを期待（<a href="https://w3c.github.io/jlreq/ja/#positioning_of_groupruby_with_respect_to_base_characters">参照</a>）。</p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
+<p><span class="bold">ルビの配置位置（ruby-position／親文字のどちらの側か）</span></p>
+<p><br /></p>
+<h4 class="ko-midashi">通常のルビ（ruby-position:over）</h4>
+<p><ruby style="ruby-position:over">親文字<rt>おやもじ</rt></ruby><ruby style="ruby-position:over">親文字<rt>おやもじ</rt></ruby></p>
+<p><br /></p>
+<p><br /></p>
+<h4 class="ko-midashi">通常と反対側のルビ（ruby-position:under）</h4>
+<p><ruby style="ruby-position:under">親文字<rt>おやもじ</rt></ruby><ruby style="ruby-position:under">親文字<rt>おやもじ</rt></ruby></p>
+<p><br /></p>
+<p><br /></p>
+<h4 class="ko-midashi">両側ルビ（ruby-position:over／ruby-position:under）</h4>
+<p><ruby>親文字<rt style="ruby-position:over">通常のルビ</rt><rtc style="ruby-position:under">通常と反対側のルビ</rtc></ruby><ruby>親文字<rt style="ruby-position:over">通常のルビ</rt><rtc style="ruby-position:under">通常と反対側のルビ</rtc></ruby></p>
+<p><br /></p>
+<p style="font-size:0.85em">※「親文字」の両側にルビ文字の流れる挙動を期待</p>
+<p><br /></p>
+<p><br /></p>
+<p><br /></p>
+<p><span class="bold">グループルビを含む文字列の行末折り返し表示</span></p>
+<p><br /></p>
+<p>｜<ruby>國破山河在<rt>くにやぶれてさんがあり</rt></ruby>｜<ruby>城春草木深<rt>しろはるにしてそうもくふかし</rt></ruby>｜<ruby>感時花濺淚<rt>ときにかんじてははなにもなみだをそそぎ</rt></ruby>｜<ruby>恨別鳥驚心<rt>わかれをうらみてはとりにもこころをおどろかす</rt></ruby>｜<ruby>烽火連三月<rt>ほうかさんげつにつらなり</rt></ruby>｜<ruby>家書抵萬金<rt>かしょばんきんにあたる</rt></ruby>｜<ruby>白頭掻更短<rt>はくとうかけばさらにみじかく</rt></ruby>｜<ruby>渾欲不勝簪<rt>すべてしんにたえざらんとほっす</rt></ruby>｜</p>
+<p><br /></p>
+<p style="font-size:0.85em">※各行末でグループルビを付けられた文字列が自然改行されているかを見る（「｜」で区切られた範囲に一括でグループルビを付けている）</p>
+</div>
+</body>
+</html>

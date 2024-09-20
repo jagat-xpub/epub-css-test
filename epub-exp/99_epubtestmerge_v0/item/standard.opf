@@ -125,8 +125,17 @@
 <item media-type="image/png" id="ya_kuro4" href="image/ya_kuro4.png" />
 <item media-type="image/png" id="fontfacesample" href="image/fontfacesample.png" />
 <item media-type="image/png" id="unicoderangesample" href="image/unicoderangesample.png" />
-<item media-type="image/svg+xml" id="svgsample" href="image/svgsample.svg" />
+<item media-type="image/svg+xml" id="svgsample1" href="image/SVGsample1.svg" />
+<item media-type="image/svg+xml" id="svgsample2" href="image/SVGsample2.svg" />
+<item media-type="image/jpeg" id="svgsample1jpg" href="image/SVGsample1.jpg" />
+<item media-type="image/jpeg" id="svgsample2jpg" href="image/SVGsample2.jpg" />
 <item media-type="image/jpeg" id="clickablemaptest" href="image/clickablemaptest.jpg" />
+<item media-type="image/png" id="imageyomiage001" href="image/imageyomiage001.png" />
+<item media-type="image/png" id="surrogatesample01" href="image/surrogatesample01.png" />
+<item media-type="image/png" id="precomposedcharasample1" href="image/precomposedcharasample1.png" />
+<item media-type="image/png" id="precomposedcharasample2" href="image/precomposedcharasample2.png" />
+<item media-type="image/png" id="precomposedcharasample3" href="image/precomposedcharasample3.png" />
+<item media-type="image/png" id="test24_001" href="image/test24_001.png" />
 
 <!-- xhtml -->
 <item media-type="application/xhtml+xml" id="p-cover" href="xhtml/p-cover.xhtml" />
@@ -174,6 +183,8 @@
 <item media-type="application/xhtml+xml" id="p3-008" href="xhtml/p3-008.xhtml" />
 <item media-type="application/xhtml+xml" id="p3-009" href="xhtml/p3-009.xhtml" />
 <item media-type="application/xhtml+xml" id="p3-010" href="xhtml/p3-010.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-011" href="xhtml/p3-011.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-012" href="xhtml/p3-012.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-001" href="xhtml/p4-001.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-002" href="xhtml/p4-002.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-003" href="xhtml/p4-003.xhtml" />
@@ -205,6 +216,11 @@
 <item media-type="application/xhtml+xml" id="p5-003-tablecell_v" href="xhtml/p5-003-tablecell_v.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-004-svg" href="xhtml/p5-004-svg.xhtml" properties="svg" />
 <item media-type="application/xhtml+xml" id="p5-005-clickablemap" href="xhtml/p5-005-clickablemap.xhtml" properties="svg" />
+<item media-type="application/xhtml+xml" id="p5-006-surrogate" href="xhtml/p5-006-surrogate.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-007-precomposedchara" href="xhtml/p5-007-precomposedchara.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-008-ruby" href="xhtml/p5-008-ruby.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-009-mathml" href="xhtml/p5-009-mathml.xhtml" properties="mathml" />
+<item media-type="application/xhtml+xml" id="p5-010-navnest" href="xhtml/p5-010-navnest.xhtml" />
 
 <!-- font -->
 <item media-type="application/font-sfnt" id="fonts.SourceCodePro-Medium.ttf" href="fonts/SourceCodePro-Medium.ttf" />
@@ -262,6 +278,8 @@
 <itemref linear="yes" idref="p3-008" />
 <itemref linear="yes" idref="p3-009" />
 <itemref linear="yes" idref="p3-010" />
+<itemref linear="yes" idref="p3-011" />
+<itemref linear="yes" idref="p3-012" />
 <itemref linear="yes" idref="p4-001" />
 <itemref linear="yes" idref="p4-002" />
 <itemref linear="yes" idref="p4-003" />
@@ -293,6 +311,12 @@
 <itemref linear="yes" idref="p5-003-tablecell_v" />
 <itemref linear="yes" idref="p5-004-svg" />
 <itemref linear="yes" idref="p5-005-clickablemap" />
+<itemref linear="yes" idref="p5-006-surrogate" />
+<itemref linear="yes" idref="p5-007-precomposedchara" />
+<itemref linear="yes" idref="p5-008-ruby" />
+<itemref linear="yes" idref="p5-009-mathml" />
+<itemref linear="yes" idref="p5-010-navnest" />
+
 </spine>
 
 </package>
