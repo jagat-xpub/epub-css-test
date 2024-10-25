@@ -148,6 +148,7 @@
 <item media-type="application/xhtml+xml" id="p-004-css-values-3-imagecheck_h" href="xhtml/p-004-css-values-3-imagecheck_h.xhtml" />
 <item media-type="application/xhtml+xml" id="p-004-css-values-3-imagecheck_v" href="xhtml/p-004-css-values-3-imagecheck_v.xhtml" />
 <item media-type="application/xhtml+xml" id="p-006-css-color-4" href="xhtml/p-006-css-color-4.xhtml" />
+<item media-type="application/xhtml+xml" id="p-005-css-variables-1" href="xhtml/p-005-css-variables-1.xhtml" />
 <item media-type="application/xhtml+xml" id="p-007-css-backgrounds-3" href="xhtml/p-007-css-backgrounds-3.xhtml" />
 <item media-type="application/xhtml+xml" id="p-008-css-images-3" href="xhtml/p-008-css-images-3.xhtml" />
 <item media-type="application/xhtml+xml" id="p-009-css-fonts-3" href="xhtml/p-009-css-fonts-3.xhtml" />
@@ -210,7 +211,8 @@
 <item media-type="application/xhtml+xml" id="p4-023" href="xhtml/p4-023.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-024" href="xhtml/p4-024.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-025" href="xhtml/p4-025.xhtml" />
-<item media-type="application/xhtml+xml" id="p5-001-float" href="xhtml/p5-001-float.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-001-float_h" href="xhtml/p5-001-float_h.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-001-float_v" href="xhtml/p5-001-float_v.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-002-backgroundimage" href="xhtml/p5-002-backgroundimage.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-003-tablecell_h" href="xhtml/p5-003-tablecell_h.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-003-tablecell_v" href="xhtml/p5-003-tablecell_v.xhtml" />
@@ -242,6 +244,7 @@
 <itemref linear="yes" idref="p-004-css-values-3" />
 <itemref linear="yes" idref="p-004-css-values-3-imagecheck_h" />
 <itemref linear="yes" idref="p-004-css-values-3-imagecheck_v" />
+<itemref linear="yes" idref="p-005-css-variables-1" />
 <itemref linear="yes" idref="p-006-css-color-4" />
 <itemref linear="yes" idref="p-007-css-backgrounds-3" />
 <itemref linear="yes" idref="p-008-css-images-3" />
@@ -305,7 +308,8 @@
 <itemref linear="yes" idref="p4-023" />
 <itemref linear="yes" idref="p4-024" />
 <itemref linear="yes" idref="p4-025" />
-<itemref linear="yes" idref="p5-001-float" />
+<itemref linear="yes" idref="p5-001-float_v" />
+<itemref linear="yes" idref="p5-001-float_h" />
 <itemref linear="yes" idref="p5-002-backgroundimage" />
 <itemref linear="yes" idref="p5-003-tablecell_h" />
 <itemref linear="yes" idref="p5-003-tablecell_v" />
