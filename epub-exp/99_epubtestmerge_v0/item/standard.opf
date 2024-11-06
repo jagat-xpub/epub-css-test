@@ -131,6 +131,10 @@
 <item media-type="image/jpeg" id="svgsample2jpg" href="image/SVGsample2.jpg" />
 <item media-type="image/jpeg" id="clickablemaptest" href="image/clickablemaptest.jpg" />
 <item media-type="image/png" id="imageyomiage001" href="image/imageyomiage001.png" />
+<item media-type="image/jpeg" id="imageyomiage001t1" href="image/imageyomiage001t1.jpg" />
+<item media-type="image/jpeg" id="imageyomiage001t2" href="image/imageyomiage001t2.jpg" />
+<item media-type="image/jpeg" id="imageyomiage001y1" href="image/imageyomiage001y1.jpg" />
+<item media-type="image/jpeg" id="imageyomiage001y2" href="image/imageyomiage001y2.jpg" />
 <item media-type="image/png" id="surrogatesample01" href="image/surrogatesample01.png" />
 <item media-type="image/png" id="precomposedcharasample1" href="image/precomposedcharasample1.png" />
 <item media-type="image/png" id="precomposedcharasample2" href="image/precomposedcharasample2.png" />
@@ -185,7 +189,8 @@
 <item media-type="application/xhtml+xml" id="p3-009" href="xhtml/p3-009.xhtml" />
 <item media-type="application/xhtml+xml" id="p3-010" href="xhtml/p3-010.xhtml" />
 <item media-type="application/xhtml+xml" id="p3-011" href="xhtml/p3-011.xhtml" />
-<item media-type="application/xhtml+xml" id="p3-012" href="xhtml/p3-012.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-012-1" href="xhtml/p3-012-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-012-2" href="xhtml/p3-012-2.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-001" href="xhtml/p4-001.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-002" href="xhtml/p4-002.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-003" href="xhtml/p4-003.xhtml" />
@@ -282,7 +287,8 @@
 <itemref linear="yes" idref="p3-009" />
 <itemref linear="yes" idref="p3-010" />
 <itemref linear="yes" idref="p3-011" />
-<itemref linear="yes" idref="p3-012" />
+<itemref linear="yes" idref="p3-012-1" />
+<itemref linear="yes" idref="p3-012-2" />
 <itemref linear="yes" idref="p4-001" />
 <itemref linear="yes" idref="p4-002" />
 <itemref linear="yes" idref="p4-003" />
