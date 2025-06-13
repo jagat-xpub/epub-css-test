@@ -59,6 +59,9 @@
 <item media-type="image/png" id="U201D_v" href="image/U201D_v.png" />
 <item media-type="image/png" id="U9AD9" href="image/U9AD9.png" />
 <item media-type="image/png" id="UACE0" href="image/UACE0.png" />
+<item media-type="image/png" id="U2018_v" href="image/U2018_v.png" />
+<item media-type="image/png" id="U2019_v" href="image/U2019_v.png" />
+<item media-type="image/png" id="kaomoji" href="image/kaomoji.png" />
 <item media-type="image/jpeg" id="a-gaiyou" href="image/a-gaiyou.jpg" />
 <item media-type="image/jpeg" id="dp011" href="image/dp011.jpg" />
 <item media-type="image/png" id="dp080-03" href="image/dp080-03.png" />
@@ -71,7 +74,6 @@
 <item media-type="image/jpeg" id="hanten01_h" href="image/hanten01_h.jpg" />
 <item media-type="image/jpeg" id="hanten02" href="image/hanten02.jpg" />
 <item media-type="image/jpeg" id="hanten02_h" href="image/hanten02_h.jpg" />
-<item media-type="image/jpeg" id="hm" href="image/hm.jpg" />
 <item media-type="image/jpeg" id="i-coffee" href="image/i-coffee.jpg" />
 <item media-type="image/png" id="image-000t" href="image/image-000t.png" />
 <item media-type="image/png" id="image-000y" href="image/image-000y.png" />
@@ -151,8 +153,8 @@
 <item media-type="application/xhtml+xml" id="p-004-css-values-3" href="xhtml/p-004-css-values-3.xhtml" />
 <item media-type="application/xhtml+xml" id="p-004-css-values-3-imagecheck_h" href="xhtml/p-004-css-values-3-imagecheck_h.xhtml" />
 <item media-type="application/xhtml+xml" id="p-004-css-values-3-imagecheck_v" href="xhtml/p-004-css-values-3-imagecheck_v.xhtml" />
-<item media-type="application/xhtml+xml" id="p-006-css-color-4" href="xhtml/p-006-css-color-4.xhtml" />
 <item media-type="application/xhtml+xml" id="p-005-css-variables-1" href="xhtml/p-005-css-variables-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-006-css-color-4" href="xhtml/p-006-css-color-4.xhtml" />
 <item media-type="application/xhtml+xml" id="p-007-css-backgrounds-3" href="xhtml/p-007-css-backgrounds-3.xhtml" />
 <item media-type="application/xhtml+xml" id="p-008-css-images-3" href="xhtml/p-008-css-images-3.xhtml" />
 <item media-type="application/xhtml+xml" id="p-009-css-fonts-3" href="xhtml/p-009-css-fonts-3.xhtml" />
@@ -215,7 +217,6 @@
 <item media-type="application/xhtml+xml" id="p4-022" href="xhtml/p4-022.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-023" href="xhtml/p4-023.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-024" href="xhtml/p4-024.xhtml" />
-<item media-type="application/xhtml+xml" id="p4-025" href="xhtml/p4-025.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-001-float_h" href="xhtml/p5-001-float_h.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-001-float_v" href="xhtml/p5-001-float_v.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-002-backgroundimage" href="xhtml/p5-002-backgroundimage.xhtml" />
@@ -228,6 +229,10 @@
 <item media-type="application/xhtml+xml" id="p5-008-ruby" href="xhtml/p5-008-ruby.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-009-mathml" href="xhtml/p5-009-mathml.xhtml" properties="mathml" />
 <item media-type="application/xhtml+xml" id="p5-010-navnest" href="xhtml/p5-010-navnest.xhtml" />
+<item media-type="application/xhtml+xml" id="p-000_tobira" href="xhtml/p-000_tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p1-000-tobira" href="xhtml/p1-000-tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-000-tobira" href="xhtml/p4-000-tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-000-tobira" href="xhtml/p5-000-tobira.xhtml" />
 
 <!-- font -->
 <item media-type="application/font-sfnt" id="fonts.SourceCodePro-Medium.ttf" href="fonts/SourceCodePro-Medium.ttf" />
@@ -241,8 +246,9 @@
 <spine page-progression-direction="rtl">
 
 <itemref linear="yes" idref="p-cover" properties="page-spread-left" />
-<itemref linear="yes" idref="prologue" properties="page-spread-left" />
+<itemref linear="yes" idref="prologue" />
 <itemref linear="yes" idref="p-toc" />
+<itemref linear="yes" idref="p-000_tobira" properties="page-spread-right" />
 <itemref linear="yes" idref="p-001-css-conditional-3" />
 <itemref linear="yes" idref="p-002-selectors-3" />
 <itemref linear="yes" idref="p-003-css-cascade-4" />
@@ -272,6 +278,7 @@
 <itemref linear="yes" idref="p-024-css-conditional-4" />
 <itemref linear="yes" idref="p-025-css-cascade-5" />
 <itemref linear="yes" idref="p-026-selectors-4" />
+<itemref linear="yes" idref="p1-000-tobira" properties="page-spread-right" />
 <itemref linear="yes" idref="p1-001" />
 <itemref linear="yes" idref="p1-002" />
 <itemref linear="yes" idref="p2-001" />
@@ -289,6 +296,7 @@
 <itemref linear="yes" idref="p3-011" />
 <itemref linear="yes" idref="p3-012-1" />
 <itemref linear="yes" idref="p3-012-2" />
+<itemref linear="yes" idref="p4-000-tobira" properties="page-spread-right" />
 <itemref linear="yes" idref="p4-001" />
 <itemref linear="yes" idref="p4-002" />
 <itemref linear="yes" idref="p4-003" />
@@ -313,7 +321,7 @@
 <itemref linear="yes" idref="p4-022" />
 <itemref linear="yes" idref="p4-023" />
 <itemref linear="yes" idref="p4-024" />
-<itemref linear="yes" idref="p4-025" />
+<itemref linear="yes" idref="p5-000-tobira" properties="page-spread-right" />
 <itemref linear="yes" idref="p5-001-float_v" />
 <itemref linear="yes" idref="p5-001-float_h" />
 <itemref linear="yes" idref="p5-002-backgroundimage" />
@@ -326,7 +334,6 @@
 <itemref linear="yes" idref="p5-008-ruby" />
 <itemref linear="yes" idref="p5-009-mathml" />
 <itemref linear="yes" idref="p5-010-navnest" />
-
 </spine>
 
 </package>
