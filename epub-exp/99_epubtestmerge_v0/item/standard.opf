@@ -142,6 +142,7 @@
 <item media-type="image/png" id="precomposedcharasample2" href="image/precomposedcharasample2.png" />
 <item media-type="image/png" id="precomposedcharasample3" href="image/precomposedcharasample3.png" />
 <item media-type="image/png" id="test24_001" href="image/test24_001.png" />
+<item media-type="image/jpeg" id="seikaisyuuimg" href="image/seikaisyuuimg.jpg" />
 
 <!-- xhtml -->
 <item media-type="application/xhtml+xml" id="p-cover" href="xhtml/p-cover.xhtml" />

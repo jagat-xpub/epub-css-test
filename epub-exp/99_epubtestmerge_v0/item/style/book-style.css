@@ -168,6 +168,13 @@ font-weight: normal;
 font-family: sans-serif-ja, sans-serif;
 font-size: 105%;
 }
+.vrtl div.main h6 {
+font-weight: normal;
+font-family: sans-serif-ja, sans-serif;
+font-size: 100%;
+margin-top: 1.0em;
+margin-right: 2.0em;
+}
 
 /* 文字ツメ文字アケ指定（全体を自動で最適化） */
 .textspacing-normal {
