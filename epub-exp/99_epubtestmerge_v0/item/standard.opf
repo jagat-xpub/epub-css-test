@@ -9,14 +9,14 @@
 <meta refines="#title" property="file-as">イーパブリーダーヒョウジテスト</meta>
 
 <!-- 著者名 -->
-<dc:creator id="creator01">JAGAT次世代パブリッシング研究会</dc:creator>
+<dc:creator id="creator01">次世代パブリッシング研究会</dc:creator>
 <meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
-<meta refines="#creator01" property="file-as">ジャガットジセダイパブリッシングケンキュウカイ</meta>
+<meta refines="#creator01" property="file-as">ジセダイパブリッシングケンキュウカイ</meta>
 <meta refines="#creator01" property="display-seq">1</meta>
 
 <!-- 出版社名 -->
-<dc:publisher id="publisher">JAGAT次世代パブリッシング研究会</dc:publisher>
-<meta refines="#publisher" property="file-as">ジャガットジセダイパブリッシングケンキュウカイ</meta>
+<dc:publisher id="publisher">ポット出版プラス</dc:publisher>
+<meta refines="#publisher" property="file-as">ポットシュッパンプラス</meta>
 
 <!-- 言語 -->
 <dc:language>ja</dc:language>
@@ -234,6 +234,7 @@
 <item media-type="application/xhtml+xml" id="p1-000-tobira" href="xhtml/p1-000-tobira.xhtml" />
 <item media-type="application/xhtml+xml" id="p4-000-tobira" href="xhtml/p4-000-tobira.xhtml" />
 <item media-type="application/xhtml+xml" id="p5-000-tobira" href="xhtml/p5-000-tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p-credit" href="xhtml/p-credit.xhtml" />
 
 <!-- font -->
 <item media-type="application/font-sfnt" id="fonts.SourceCodePro-Medium.ttf" href="fonts/SourceCodePro-Medium.ttf" />
@@ -335,6 +336,7 @@
 <itemref linear="yes" idref="p5-008-ruby" />
 <itemref linear="yes" idref="p5-009-mathml" />
 <itemref linear="yes" idref="p5-010-navnest" />
+<itemref linear="yes" idref="p-credit" />
 </spine>
 
 </package>
