@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja" unique-identifier="unique-id"
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja" unique-identifier="jpecode"
  prefix="rendition: http://www.idpf.org/vocab/rendition/# ebpaj: http://www.ebpaj.jp/ fixed-layout-jp: http://www.digital-comic.jp/ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
 
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -22,7 +22,7 @@
 <dc:language>ja</dc:language>
 
 <!-- ファイルid -->
-<dc:identifier id="unique-id">urn:uuid:E29D89CC-7603-4969-B4F2-CDD4964976E0</dc:identifier>
+<dc:identifier id="jpecode">86642538000000000000</dc:identifier>
 
 <!-- 更新日 -->
 <meta property="dcterms:modified">2025-06-13T15:56:29Z</meta>
