@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Containment Module Level 1</title>
+<style>
+html {
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode:   horizontal-tb;
+  writing-mode: horizontal-tb;
+}
+#contain .test {
+  margin: 1em 2em;
+  width: 5em;
+  min-height: 5em;
+  line-height: 1.5;
+  font-family: monospace;
+  border: 3px solid;
+}
+#contain .test.none {
+  contain: none;
+}
+#contain .test.strict {
+  contain: strict;
+}
+</style>
+</head>
+<body>
+<span id="page018" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="18"/>
+  <h1 id="toc-21A3B26A2ABA4954A4B231C521A1BF2E">CSS Containment Module Level 1</h1>
+  <section id="contain">
+    <h2 id="toc-C0DF29BFDC43477CA0D71FFE53B1EEBE">contain プロパティ</h2>
+    <div class="test none">The quick brown fox jumps over the lazy dog.</div>
+    <div class="test strict">The quick brown fox jumps over the lazy dog.</div>
+    <ul>
+      <li>・上の2つのボックスの2番目のほうが高さが低い（内容テキストが途中で切れている）ならOK</li>
+    </ul>
+  </section>
+</body>
+</html>

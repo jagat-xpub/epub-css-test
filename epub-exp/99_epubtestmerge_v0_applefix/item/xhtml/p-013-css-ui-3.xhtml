@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS User Interface Module Level 3</title>
+<style>
+html {
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode:   horizontal-tb;
+  writing-mode: horizontal-tb;
+}
+#box-sizing .container {
+  width: 100px;
+  height: 100px;
+  border: 3px dotted;
+}
+
+#box-sizing .container .box {
+  width: 100%;
+  height: 100%;
+  border: 25px silver solid;
+}
+
+#box-sizing .content-box .container {
+  margin-bottom: 50px;
+}
+
+#box-sizing .content-box .container .box {
+  box-sizing: content-box;
+}
+
+#box-sizing .border-box .container .box {
+  box-sizing: border-box;
+}
+
+#outline {
+  margin: 2em 0;
+  outline: 3px solid silver;
+}
+</style>
+</head>
+<body>
+<span id="page017" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="17"/>
+  <h1 id="toc-E950B59FC13243989E0EA1B7CA99FFD5">CSS User Interface Module Level 3</h1>
+  <section id="box-sizing">
+    <h2 id="toc-5F531529452841BAB3985C15763A47ED">box-sizing プロパティ</h2>
+    <section class="border-box">
+      <h3>border-box</h3>
+      <div class="container">
+        <div class="box">Box</div>
+      </div>
+      <br/>
+      <ul>
+        <li>・点線ボーダーのボックスの中に太い灰色ボーダーのボックス（widthとheightは100%）がぴったり収まっていればOK</li>
+      </ul>
+    </section>
+    <section class="content-box">
+      <h3>content-box</h3>
+      <div class="container">
+        <div class="box">Box</div>
+      </div>
+      <ul>
+        <li>・点線ボーダーのボックスから内側の太い灰色ボーダーのボックス（widthとheightは100%）がボーダーの太さの2倍の分だけ右側と下側にはみ出していればOK</li>
+      </ul>
+    </section>
+  </section>
+  <section id="outline">
+    <h2 id="toc-DA2026CFBBF84153A2A95EAFE1F132B8">outline プロパティ</h2>
+    <ul>
+      <li>・枠で囲まれていればOK</li>
+    </ul>
+  </section>
+</body>
+</html>

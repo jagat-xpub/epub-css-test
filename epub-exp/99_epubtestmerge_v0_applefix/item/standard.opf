@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="ja" unique-identifier="jpecode"
+ prefix="rendition: http://www.idpf.org/vocab/rendition/# ebpaj: http://www.ebpaj.jp/ fixed-layout-jp: http://www.digital-comic.jp/ ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<!-- 作品名 -->
+<dc:title id="title">EPUBリーダー表示テスト</dc:title>
+<meta refines="#title" property="file-as">イーパブリーダーヒョウジテスト</meta>
+
+<!-- 著者名 -->
+<dc:creator id="creator01">次世代パブリッシング研究会</dc:creator>
+<meta refines="#creator01" property="role" scheme="marc:relators">aut</meta>
+<meta refines="#creator01" property="file-as">ジセダイパブリッシングケンキュウカイ</meta>
+<meta refines="#creator01" property="display-seq">1</meta>
+
+<!-- 出版社名 -->
+<dc:publisher id="publisher">ポット出版プラス</dc:publisher>
+<meta refines="#publisher" property="file-as">ポットシュッパンプラス</meta>
+
+<!-- 言語 -->
+<dc:language>ja</dc:language>
+
+<!-- ファイルid -->
+<dc:identifier id="jpecode">86642538000000000001</dc:identifier>
+
+<!-- 更新日 -->
+<meta property="dcterms:modified">2025-06-13T15:56:29Z</meta>
+
+<!-- Fixed-Layout Documents指定 -->
+<meta property="rendition:layout">reflowable</meta>
+<meta property="rendition:spread">auto</meta>
+<meta property="rendition:orientation">auto</meta>
+
+<!-- etc. -->
+<meta property="ebpaj:guide-version">1.1.3</meta>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta property="ibooks:binding">true</meta>
+<meta property="ibooks:scroll-axis">horizontal</meta>
+
+</metadata>
+
+<manifest>
+
+<!-- navigation -->
+<item media-type="application/xhtml+xml" id="toc" href="navigation-documents.xhtml" properties="nav" />
+
+<!-- style -->
+<item media-type="text/css" id="book-style" href="style/book-style.css"/>
+<item media-type="text/css" id="style-advance" href="style/style-advance.css"/>
+<item media-type="text/css" id="style-check" href="style/style-check.css"/>
+<item media-type="text/css" id="style-reset" href="style/style-reset.css"/>
+<item media-type="text/css" id="style-standard" href="style/style-standard.css"/>
+
+<!-- image -->
+
+<item media-type="image/jpeg" id="cover" href="image/cover.jpg" properties="cover-image" />
+<item media-type="image/png" id="U201C_v" href="image/U201C_v.png" />
+<item media-type="image/png" id="U201D_v" href="image/U201D_v.png" />
+<item media-type="image/png" id="U9AD9" href="image/U9AD9.png" />
+<item media-type="image/png" id="UACE0" href="image/UACE0.png" />
+<item media-type="image/png" id="U2018_v" href="image/U2018_v.png" />
+<item media-type="image/png" id="U2019_v" href="image/U2019_v.png" />
+<item media-type="image/png" id="kaomoji" href="image/kaomoji.png" />
+<item media-type="image/jpeg" id="a-gaiyou" href="image/a-gaiyou.jpg" />
+<item media-type="image/jpeg" id="dp011" href="image/dp011.jpg" />
+<item media-type="image/png" id="dp080-03" href="image/dp080-03.png" />
+<item media-type="image/png" id="dp098-05" href="image/dp098-05.png" />
+<item media-type="image/jpeg" id="dp166" href="image/dp166.jpg" />
+<item media-type="image/jpeg" id="dp204-02" href="image/dp204-02.jpg" />
+<item media-type="image/png" id="gi_maru" href="image/gi_maru.png" />
+<item media-type="image/jpeg" id="gyouto_line" href="image/gyouto_line.jpg" />
+<item media-type="image/jpeg" id="hanten01" href="image/hanten01.jpg" />
+<item media-type="image/jpeg" id="hanten01_h" href="image/hanten01_h.jpg" />
+<item media-type="image/jpeg" id="hanten02" href="image/hanten02.jpg" />
+<item media-type="image/jpeg" id="hanten02_h" href="image/hanten02_h.jpg" />
+<item media-type="image/jpeg" id="i-coffee" href="image/i-coffee.jpg" />
+<item media-type="image/png" id="image-000t" href="image/image-000t.png" />
+<item media-type="image/png" id="image-000y" href="image/image-000y.png" />
+<item media-type="image/png" id="image000t" href="image/image000t.png" />
+<item media-type="image/png" id="image000y" href="image/image000y.png" />
+<item media-type="image/png" id="image001t" href="image/image001t.png" />
+<item media-type="image/png" id="image001y" href="image/image001y.png" />
+<item media-type="image/png" id="image002t" href="image/image002t.png" />
+<item media-type="image/png" id="image002y" href="image/image002y.png" />
+<item media-type="image/png" id="image003t" href="image/image003t.png" />
+<item media-type="image/png" id="image003y" href="image/image003y.png" />
+<item media-type="image/png" id="image004t" href="image/image004t.png" />
+<item media-type="image/png" id="image004y" href="image/image004y.png" />
+<item media-type="image/png" id="image005t" href="image/image005t.png" />
+<item media-type="image/png" id="image005y" href="image/image005y.png" />
+<item media-type="image/png" id="image006t" href="image/image006t.png" />
+<item media-type="image/png" id="image006y" href="image/image006y.png" />
+<item media-type="image/png" id="image007t" href="image/image007t.png" />
+<item media-type="image/png" id="image007y" href="image/image007y.png" />
+<item media-type="image/png" id="image008t" href="image/image008t.png" />
+<item media-type="image/png" id="image008y" href="image/image008y.png" />
+<item media-type="image/png" id="image009t" href="image/image009t.png" />
+<item media-type="image/png" id="image009y" href="image/image009y.png" />
+<item media-type="image/jpeg" id="in_ruby" href="image/in_ruby.jpg" />
+<item media-type="image/jpeg" id="in_ruby_h" href="image/in_ruby_h.jpg" />
+<item media-type="image/jpeg" id="linkline" href="image/linkline.jpg" />
+<item media-type="image/jpeg" id="mojiochi01" href="image/mojiochi01.jpg" />
+<item media-type="image/jpeg" id="mojiochi01_2" href="image/mojiochi01_2.jpg" />
+<item media-type="image/jpeg" id="mojiochi02" href="image/mojiochi02.jpg" />
+<item media-type="image/jpeg" id="neko" href="image/neko.jpg" />
+<item media-type="image/jpeg" id="neko_h" href="image/neko_h.jpg" />
+<item media-type="image/png" id="p030_i" href="image/p030_i.png" />
+<item media-type="image/jpeg" id="ruby_bg" href="image/ruby_bg.jpg" />
+<item media-type="image/jpeg" id="ruby_bg_h" href="image/ruby_bg_h.jpg" />
+<item media-type="image/jpeg" id="shukusho_kakunin" href="image/shukusho_kakunin.jpg" />
+<item media-type="image/jpeg" id="sushiki" href="image/sushiki.jpg" />
+<item media-type="image/jpeg" id="sushiki2" href="image/sushiki2.jpg" />
+<item media-type="image/jpeg" id="table01" href="image/table01.jpg" />
+<item media-type="image/jpeg" id="table02" href="image/table02.jpg" />
+<item media-type="image/png" id="tsuji" href="image/tsuji.png" />
+<item media-type="image/jpeg" id="violet_01" href="image/violet_01.jpg" />
+<item media-type="image/jpeg" id="violet_01_h" href="image/violet_01_h.jpg" />
+<item media-type="image/jpeg" id="violet_02" href="image/violet_02.jpg" />
+<item media-type="image/jpeg" id="violet_02_h" href="image/violet_02_h.jpg" />
+<item media-type="image/jpeg" id="violet_03" href="image/violet_03.jpg" />
+<item media-type="image/jpeg" id="violet_03_h" href="image/violet_03_h.jpg" />
+<item media-type="image/jpeg" id="lengthimage_h" href="image/lengthimage_h.jpg" />
+<item media-type="image/jpeg" id="lengthimage_v" href="image/lengthimage_v.jpg" />
+<item media-type="image/jpeg" id="floatsample" href="image/floatsample.jpg" />
+<item media-type="image/jpeg" id="bgimagesample" href="image/bgimagesample.jpg" />
+<item media-type="image/png" id="ya_kuro4" href="image/ya_kuro4.png" />
+<item media-type="image/png" id="fontfacesample" href="image/fontfacesample.png" />
+<item media-type="image/png" id="unicoderangesample" href="image/unicoderangesample.png" />
+<item media-type="image/svg+xml" id="svgsample" href="image/svgsample.svg" />
+<item media-type="image/svg+xml" id="svgsample1" href="image/SVGsample1.svg" />
+<item media-type="image/svg+xml" id="svgsample2" href="image/SVGsample2.svg" />
+<item media-type="image/jpeg" id="svgsample1jpg" href="image/SVGsample1.jpg" />
+<item media-type="image/jpeg" id="svgsample2jpg" href="image/SVGsample2.jpg" />
+<item media-type="image/jpeg" id="clickablemaptest" href="image/clickablemaptest.jpg" />
+<item media-type="image/png" id="imageyomiage001" href="image/imageyomiage001.png" />
+<item media-type="image/jpeg" id="imageyomiage001t1" href="image/imageyomiage001t1.jpg" />
+<item media-type="image/jpeg" id="imageyomiage001t2" href="image/imageyomiage001t2.jpg" />
+<item media-type="image/jpeg" id="imageyomiage001y1" href="image/imageyomiage001y1.jpg" />
+<item media-type="image/jpeg" id="imageyomiage001y2" href="image/imageyomiage001y2.jpg" />
+<item media-type="image/png" id="surrogatesample01" href="image/surrogatesample01.png" />
+<item media-type="image/png" id="precomposedcharasample1" href="image/precomposedcharasample1.png" />
+<item media-type="image/png" id="precomposedcharasample2" href="image/precomposedcharasample2.png" />
+<item media-type="image/png" id="precomposedcharasample3" href="image/precomposedcharasample3.png" />
+<item media-type="image/png" id="test24_001" href="image/test24_001.png" />
+<item media-type="image/jpeg" id="seikaisyuuimg" href="image/seikaisyuuimg.jpg" />
+
+<!-- xhtml -->
+<item media-type="application/xhtml+xml" id="p-cover" href="xhtml/p-cover.xhtml" />
+<item media-type="application/xhtml+xml" id="p-toc" href="xhtml/p-toc.xhtml" />
+<item media-type="application/xhtml+xml" id="prologue" href="xhtml/prologue.xhtml" />
+<item media-type="application/xhtml+xml" id="p-001-css-conditional-3" href="xhtml/p-001-css-conditional-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-002-selectors-3" href="xhtml/p-002-selectors-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-003-css-cascade-4" href="xhtml/p-003-css-cascade-4.xhtml" />
+<item media-type="application/xhtml+xml" id="p-004-css-values-3" href="xhtml/p-004-css-values-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-004-css-values-3-imagecheck_h" href="xhtml/p-004-css-values-3-imagecheck_h.xhtml" />
+<item media-type="application/xhtml+xml" id="p-004-css-values-3-imagecheck_v" href="xhtml/p-004-css-values-3-imagecheck_v.xhtml" />
+<item media-type="application/xhtml+xml" id="p-005-css-variables-1" href="xhtml/p-005-css-variables-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-006-css-color-4" href="xhtml/p-006-css-color-4.xhtml" />
+<item media-type="application/xhtml+xml" id="p-007-css-backgrounds-3" href="xhtml/p-007-css-backgrounds-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-008-css-images-3" href="xhtml/p-008-css-images-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-009-css-fonts-3" href="xhtml/p-009-css-fonts-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-009-ivsvertical" href="xhtml/p-009-ivsvertical.xhtml" />
+<item media-type="application/xhtml+xml" id="p-010-css-writing-modes-3" href="xhtml/p-010-css-writing-modes-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-011-css-multicol-1" href="xhtml/p-011-css-multicol-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-012-css-flexbox-1" href="xhtml/p-012-css-flexbox-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-013-css-ui-3" href="xhtml/p-013-css-ui-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-014-css-contain-1" href="xhtml/p-014-css-contain-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-015-css-transforms-1" href="xhtml/p-015-css-transforms-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-016-compositing-1" href="xhtml/p-016-compositing-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-017-css-counter-styles-3" href="xhtml/p-017-css-counter-styles-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-018-css-break-3" href="xhtml/p-018-css-break-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-019-css-text-3" href="xhtml/p-019-css-text-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-020-css-text-decor-3" href="xhtml/p-020-css-text-decor-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-021-css-grid-1" href="xhtml/p-021-css-grid-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-022-css-sizing-3" href="xhtml/p-022-css-sizing-3.xhtml" />
+<item media-type="application/xhtml+xml" id="p-023-css-logical-1" href="xhtml/p-023-css-logical-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p-024-css-conditional-4" href="xhtml/p-024-css-conditional-4.xhtml" />
+<item media-type="application/xhtml+xml" id="p-025-css-cascade-5" href="xhtml/p-025-css-cascade-5.xhtml" />
+<item media-type="application/xhtml+xml" id="p-026-selectors-4" href="xhtml/p-026-selectors-4.xhtml" />
+<item media-type="application/xhtml+xml" id="p1-001" href="xhtml/p1-001.xhtml" />
+<item media-type="application/xhtml+xml" id="p1-002" href="xhtml/p1-002.xhtml" />
+<item media-type="application/xhtml+xml" id="p2-001" href="xhtml/p2-001.xhtml" />
+<item media-type="application/xhtml+xml" id="p2-002" href="xhtml/p2-002.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-001" href="xhtml/p3-001.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-002" href="xhtml/p3-002.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-003" href="xhtml/p3-003.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-004" href="xhtml/p3-004.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-005" href="xhtml/p3-005.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-006" href="xhtml/p3-006.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-007" href="xhtml/p3-007.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-008" href="xhtml/p3-008.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-009" href="xhtml/p3-009.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-010" href="xhtml/p3-010.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-011" href="xhtml/p3-011.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-012-1" href="xhtml/p3-012-1.xhtml" />
+<item media-type="application/xhtml+xml" id="p3-012-2" href="xhtml/p3-012-2.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-001" href="xhtml/p4-001.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-002" href="xhtml/p4-002.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-003" href="xhtml/p4-003.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-004" href="xhtml/p4-004.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-005" href="xhtml/p4-005.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-006" href="xhtml/p4-006.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-007" href="xhtml/p4-007.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-008" href="xhtml/p4-008.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-009" href="xhtml/p4-009.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-010" href="xhtml/p4-010.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-011" href="xhtml/p4-011.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-012" href="xhtml/p4-012.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-013" href="xhtml/p4-013.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-014" href="xhtml/p4-014.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-015" href="xhtml/p4-015.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-016" href="xhtml/p4-016.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-017" href="xhtml/p4-017.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-018" href="xhtml/p4-018.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-019" href="xhtml/p4-019.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-020" href="xhtml/p4-020.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-021" href="xhtml/p4-021.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-022" href="xhtml/p4-022.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-023" href="xhtml/p4-023.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-024" href="xhtml/p4-024.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-001-float_h" href="xhtml/p5-001-float_h.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-001-float_v" href="xhtml/p5-001-float_v.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-002-backgroundimage" href="xhtml/p5-002-backgroundimage.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-003-tablecell_h" href="xhtml/p5-003-tablecell_h.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-003-tablecell_v" href="xhtml/p5-003-tablecell_v.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-004-svg" href="xhtml/p5-004-svg.xhtml" properties="svg" />
+<item media-type="application/xhtml+xml" id="p5-005-clickablemap" href="xhtml/p5-005-clickablemap.xhtml" properties="svg" />
+<item media-type="application/xhtml+xml" id="p5-006-surrogate" href="xhtml/p5-006-surrogate.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-007-precomposedchara" href="xhtml/p5-007-precomposedchara.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-008-ruby" href="xhtml/p5-008-ruby.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-009-mathml" href="xhtml/p5-009-mathml.xhtml" properties="mathml" />
+<item media-type="application/xhtml+xml" id="p5-010-navnest" href="xhtml/p5-010-navnest.xhtml" />
+<item media-type="application/xhtml+xml" id="p-000_tobira" href="xhtml/p-000_tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p1-000-tobira" href="xhtml/p1-000-tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p4-000-tobira" href="xhtml/p4-000-tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p5-000-tobira" href="xhtml/p5-000-tobira.xhtml" />
+<item media-type="application/xhtml+xml" id="p-credit" href="xhtml/p-credit.xhtml" />
+
+<!-- font -->
+<item media-type="application/font-sfnt" id="fonts.SourceCodePro-Medium.ttf" href="fonts/SourceCodePro-Medium.ttf" />
+<item media-type="application/font-sfnt" id="fonts.SourceCodePro-MediumIt.ttf" href="fonts/SourceCodePro-MediumIt.ttf" />
+<item media-type="application/font-sfnt" id="fonts.SourceHanSerif-VF.otf" href="fonts/SourceHanSerif-VF.otf" />
+<item media-type="application/font-sfnt" id="fonts.SourceHanSerifK-VF.otf" href="fonts/SourceHanSerifK-VF.otf" />
+<item media-type="application/font-sfnt" id="fonts.ahem.ttf" href="fonts/ahem.ttf" />
+<item media-type="application/font-sfnt" id="fonts.CrimsonText-Regular.ttf" href="fonts/CrimsonText-Regular.ttf" />
+</manifest>
+
+<spine page-progression-direction="rtl">
+
+<itemref linear="yes" idref="p-cover" properties="page-spread-left" />
+<itemref linear="yes" idref="prologue" />
+<itemref linear="yes" idref="p-toc" />
+<itemref linear="yes" idref="p-000_tobira" properties="page-spread-right" />
+<itemref linear="yes" idref="p-001-css-conditional-3" />
+<itemref linear="yes" idref="p-002-selectors-3" />
+<itemref linear="yes" idref="p-003-css-cascade-4" />
+<itemref linear="yes" idref="p-004-css-values-3" />
+<itemref linear="yes" idref="p-004-css-values-3-imagecheck_h" />
+<itemref linear="yes" idref="p-004-css-values-3-imagecheck_v" />
+<itemref linear="yes" idref="p-005-css-variables-1" />
+<itemref linear="yes" idref="p-006-css-color-4" />
+<itemref linear="yes" idref="p-007-css-backgrounds-3" />
+<itemref linear="yes" idref="p-008-css-images-3" />
+<itemref linear="yes" idref="p-009-css-fonts-3" />
+<itemref linear="yes" idref="p-009-ivsvertical" />
+<itemref linear="yes" idref="p-010-css-writing-modes-3" />
+<itemref linear="yes" idref="p-011-css-multicol-1" />
+<itemref linear="yes" idref="p-012-css-flexbox-1" />
+<itemref linear="yes" idref="p-013-css-ui-3" />
+<itemref linear="yes" idref="p-014-css-contain-1" />
+<itemref linear="yes" idref="p-015-css-transforms-1" />
+<itemref linear="yes" idref="p-016-compositing-1" />
+<itemref linear="yes" idref="p-017-css-counter-styles-3" />
+<itemref linear="yes" idref="p-018-css-break-3" />
+<itemref linear="yes" idref="p-019-css-text-3" />
+<itemref linear="yes" idref="p-020-css-text-decor-3" />
+<itemref linear="yes" idref="p-021-css-grid-1" />
+<itemref linear="yes" idref="p-022-css-sizing-3" />
+<itemref linear="yes" idref="p-023-css-logical-1" />
+<itemref linear="yes" idref="p-024-css-conditional-4" />
+<itemref linear="yes" idref="p-025-css-cascade-5" />
+<itemref linear="yes" idref="p-026-selectors-4" />
+<itemref linear="yes" idref="p1-000-tobira" properties="page-spread-right" />
+<itemref linear="yes" idref="p1-001" />
+<itemref linear="yes" idref="p1-002" />
+<itemref linear="yes" idref="p2-001" />
+<itemref linear="yes" idref="p2-002" properties="page-spread-left" />
+<itemref linear="yes" idref="p3-001" />
+<itemref linear="yes" idref="p3-002" />
+<itemref linear="yes" idref="p3-003" />
+<itemref linear="yes" idref="p3-004" />
+<itemref linear="yes" idref="p3-005" />
+<itemref linear="yes" idref="p3-006" />
+<itemref linear="yes" idref="p3-007" />
+<itemref linear="yes" idref="p3-008" />
+<itemref linear="yes" idref="p3-009" />
+<itemref linear="yes" idref="p3-010" />
+<itemref linear="yes" idref="p3-011" />
+<itemref linear="yes" idref="p3-012-1" />
+<itemref linear="yes" idref="p3-012-2" />
+<itemref linear="yes" idref="p4-000-tobira" properties="page-spread-right" />
+<itemref linear="yes" idref="p4-001" />
+<itemref linear="yes" idref="p4-002" />
+<itemref linear="yes" idref="p4-003" />
+<itemref linear="yes" idref="p4-004" />
+<itemref linear="yes" idref="p4-005" />
+<itemref linear="yes" idref="p4-006" />
+<itemref linear="yes" idref="p4-007" />
+<itemref linear="yes" idref="p4-008" />
+<itemref linear="yes" idref="p4-009" />
+<itemref linear="yes" idref="p4-010" />
+<itemref linear="yes" idref="p4-011" />
+<itemref linear="yes" idref="p4-012" />
+<itemref linear="yes" idref="p4-013" />
+<itemref linear="yes" idref="p4-014" />
+<itemref linear="yes" idref="p4-015" />
+<itemref linear="yes" idref="p4-016" />
+<itemref linear="yes" idref="p4-017" />
+<itemref linear="yes" idref="p4-018" />
+<itemref linear="yes" idref="p4-019" />
+<itemref linear="yes" idref="p4-020" />
+<itemref linear="yes" idref="p4-021" />
+<itemref linear="yes" idref="p4-022" />
+<itemref linear="yes" idref="p4-023" />
+<itemref linear="yes" idref="p4-024" />
+<itemref linear="yes" idref="p5-000-tobira" properties="page-spread-right" />
+<itemref linear="yes" idref="p5-001-float_v" />
+<itemref linear="yes" idref="p5-001-float_h" />
+<itemref linear="yes" idref="p5-002-backgroundimage" />
+<itemref linear="yes" idref="p5-003-tablecell_h" />
+<itemref linear="yes" idref="p5-003-tablecell_v" />
+<itemref linear="yes" idref="p5-004-svg" />
+<itemref linear="yes" idref="p5-005-clickablemap" />
+<itemref linear="yes" idref="p5-006-surrogate" />
+<itemref linear="yes" idref="p5-007-precomposedchara" />
+<itemref linear="yes" idref="p5-008-ruby" />
+<itemref linear="yes" idref="p5-009-mathml" />
+<itemref linear="yes" idref="p5-010-navnest" />
+<itemref linear="yes" idref="p-credit" />
+</spine>
+
+</package>

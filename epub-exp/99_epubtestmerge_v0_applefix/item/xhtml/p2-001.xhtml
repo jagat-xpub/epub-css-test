@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja" class="vrtl">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="../style/book-style.css" />
+<title>EpubTestSample</title>
+</head>
+<body class="p-text">
+<div class="main">
+<span id="page034" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="34"/>
+<!-- 本文 -->
+<h2 class="oo-midashi" id="toc-7FBC21BB0ED24D6C92917BBCF5ED3F00">イタリック表示テスト（タテ）</h2>
+<p class="m-right-0em50">※「a」の字形が異なっているかどうかでitalicかoblique処理なのかが判別できます。異なった字形になっていたらＯＫです。なお表示フォントの種類はこのテストには関係ありませんので無視してください。</p>
+<h4 class="ko-midashi">InDesignでの表示例（参考画像）</h4>
+<p class="m-right-0em50"><img class="fit" src = "../image/image-000t.png" alt = "" /></p>
+<p><br /></p>
+
+<h4 class="ko-midashi">「font-style: italic」のみ指定</h4>
+<p>abc <span style="font-style: italic">abc</span> abc</p>
+<p><br /></p>
+
+<h4 class="ko-midashi">「lang=&quot;en&quot; xml:lang =&quot;en&quot;」の部分言語指定を行った上で「font-style: italic」を指定</h4>
+<p><span lang="en" xml:lang ="en">abc <span style="font-style: italic">abc</span></span> abc</p>
+<p><br /></p>
+
+<h4 class="ko-midashi">全体に埋め込みフォントを指定した上で該当箇所に「font-style: italic」を指定</h4>
+<p><span class="SourceCodeProMedium">abc <span style="font-style: italic">abc</span> abc</span></p>
+<p><br /></p>
+
+<h4 class="ko-midashi">正体の部分とイタリックの部分で別の埋め込みフォントを指定</h4>
+<p><span class="SourceCodeProMedium">abc </span><span class="SourceCodeProMediumIt">abc</span><span class="SourceCodeProMedium"> abc</span></p>
+<p><br /></p>
+
+</div>
+</body>
+</html>

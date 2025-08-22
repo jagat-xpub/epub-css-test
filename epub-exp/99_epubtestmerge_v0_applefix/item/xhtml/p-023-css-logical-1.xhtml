@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Logical Properties and Values Level 1</title>
+<style>
+html {
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode:   horizontal-tb;
+  writing-mode: horizontal-tb;
+}
+#logical-prop .test,
+#logical-prop .test-ref {
+  border: 2px solid;
+}
+
+#logical-prop .inline-size .test {
+  inline-size: 5em;
+}
+#logical-prop .inline-size .test-ref {
+  width: 5em;
+}
+
+#logical-prop .block-size .test {
+  block-size: 3em;
+}
+#logical-prop .block-size .test-ref {
+  height: 3em;
+}
+
+#logical-prop .min-inline-size .test {
+  width: 1em;
+  min-inline-size: 5em;
+}
+#logical-prop .min-inline-size .test-ref {
+  width: 3em;
+  min-width: 5em;
+}
+
+#logical-prop .min-block-size .test {
+  height: 1em;
+  min-block-size: 3em;
+}
+#logical-prop .min-block-size .test-ref {
+  height: 2em;
+  min-height: 3em;
+}
+
+#logical-prop .max-inline-size .test {
+  width: 6em;
+  max-inline-size: 3em;
+}
+#logical-prop .max-inline-size .test-ref {
+  width: 10em;
+  max-width: 3em;
+}
+
+#logical-prop .max-block-size .test {
+  height: 2em;
+  max-block-size: 1.5em;
+}
+#logical-prop .max-block-size .test-ref {
+  height: 4em;
+  max-height: 1.5em;
+}
+
+#logical-prop .margin-block-start .test * {
+  margin-block-start: 1.5em;
+}
+#logical-prop .margin-block-start .test-ref * {
+  margin-top: 1.5em;
+}
+
+#logical-prop .margin-inline-start .test * {
+  margin-inline-start: 3em;
+}
+#logical-prop .margin-inline-start .test-ref * {
+  margin-left: 3em;
+}
+
+#logical-prop .margin-block .test * {
+  margin-block: 1.5em;
+}
+#logical-prop .margin-block .test-ref * {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#logical-prop .margin-inline .test * {
+  margin-inline: 3em;
+}
+#logical-prop .margin-inline .test-ref * {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#logical-prop .inset-block-start .test * {
+  position: relative;
+  inset-block-start: 0.5em;
+}
+#logical-prop .inset-block-start .test-ref * {
+  position: relative;
+  top: 0.5em;
+}
+
+#logical-prop .inset-inline-start .test * {
+  position: relative;
+  inset-inline-start: 3em;
+}
+#logical-prop .inset-inline-start .test-ref * {
+  position: relative;
+  left: 3em;
+}
+
+#logical-prop .inset-block .test * {
+  position: relative;
+  inset-block: 0.5em;
+}
+#logical-prop .inset-block .test-ref * {
+  position: relative;
+  top: 0.5em;
+  bottom: 0.5em;
+}
+
+#logical-prop .inset-inline .test * {
+  position: relative;
+  inset-inline: 3em;
+}
+#logical-prop .inset-inline .test-ref * {
+  position: relative;
+  left: 3em;
+  right: 3em;
+}
+
+#logical-prop .inset .test * {
+  position: relative;
+  inset: 0.5em 3em;
+}
+#logical-prop .inset .test-ref * {
+  position: relative;
+  left: 3em;
+  right: 3em;
+  top: 0.5em;
+  bottom: 0.5em;
+}
+
+#logical-prop .padding-block-start .test {
+  padding-block-start: 1.5em;
+}
+#logical-prop .padding-block-start .test-ref {
+  padding-top: 1.5em;
+}
+
+#logical-prop .padding-inline-start .test {
+  padding-inline-start: 3em;
+}
+#logical-prop .padding-inline-start .test-ref {
+  padding-left: 3em;
+}
+
+#logical-prop .padding-block .test {
+  padding-block: 1.5em;
+}
+#logical-prop .padding-block .test-ref {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#logical-prop .padding-inline .test {
+  padding-inline: 3em;
+}
+#logical-prop .padding-inline .test-ref {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#logical-prop .border-block-start-width .test {
+  border-style: solid;
+  border-block-start-width: 0.5em;
+}
+#logical-prop .border-block-start-width .test-ref {
+  border-style: solid;
+  border-top-width: 0.5em;
+}
+
+#logical-prop .border-inline-start-width .test {
+  border-style: solid;
+  border-inline-start-width: 3em;
+}
+#logical-prop .border-inline-start-width .test-ref {
+  border-style: solid;
+  border-left-width: 3em;
+}
+
+#logical-prop .border-block-width .test {
+  border-style: solid;
+  border-block-width: 0.5em;
+}
+#logical-prop .border-block-width .test-ref {
+  border-style: solid;
+  border-top-width: 0.5em;
+  border-bottom-width: 0.5em;
+}
+
+#logical-prop .border-inline-width .test {
+  border-style: solid;
+  border-inline-width: 3em;
+}
+#logical-prop .border-inline-width .test-ref {
+  border-style: solid;
+  border-left-width: 3em;
+  border-right-width: 3em;
+}
+
+#logical-prop .border-block .test {
+  border-block: 0.5em solid;
+}
+#logical-prop .border-block .test-ref {
+  border-top: 0.5em solid;
+  border-bottom: 0.5em solid;
+}
+
+#logical-prop .border-inline .test {
+  border-inline: 3em solid;
+}
+#logical-prop .border-inline .test-ref {
+  border-left: 3em solid;
+  border-right: 3em solid;
+}
+
+</style>
+</head>
+<body>
+<span id="page027" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="27"/>
+  <h1 id="toc-DBCD4994D383476C96D5F3C237C6F56C">CSS Logical Properties and Values Level 1</h1>
+  <section id="logical-prop">
+    <h2 id="toc-DC99CAA4081B4B74A4E32FA862E42903">論理プロパティ</h2>
+    <section class="inline-size">
+      <h3>inline-size</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="block-size">
+      <h3>block-size</h3>
+      <ul>
+        <li><div class="test"><div>TEST<br/>　</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="min-inline-size">
+      <h3>min-inline-size</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="min-block-size">
+      <h3>min-block-size</h3>
+      <ul>
+        <li><div class="test"><div>TEST<br/>　</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="max-inline-size">
+      <h3>max-inline-size</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="max-block-size">
+      <h3>max-block-size</h3>
+      <ul>
+        <li><div class="test"><div>TEST<br/>　</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="margin-block-start">
+      <h3>margin-block-start</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="margin-inline-start">
+      <h3>margin-inline-start</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="margin-block">
+      <h3>margin-block</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="margin-inline">
+      <h3>margin-inline</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="inset-block-start">
+      <h3>inset-block-start</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK（ただし「TEST」の位置は枠内の左上からずれていること）</li>
+      </ul>
+    </section>
+    <section class="inset-inline-start">
+      <h3>inset-inline-start</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK（ただし「TEST」の位置は枠内の左上からずれていること）</li>
+      </ul>
+    </section>
+    <section class="inset-block">
+      <h3>inset-block</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK（ただし「TEST」の位置は枠内の左上からずれていること）</li>
+      </ul>
+    </section>
+    <section class="inset-inline">
+      <h3>inset-inline</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK（ただし「TEST」の位置は枠内の左上からずれていること）</li>
+      </ul>
+    </section>
+    <section class="inset">
+      <h3>inset</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK（ただし「TEST」の位置は枠内の左上からずれていること）</li>
+      </ul>
+    </section>
+    <section class="padding-block-start">
+      <h3>padding-block-start</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="padding-inline-start">
+      <h3>padding-inline-start</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="padding-block">
+      <h3>padding-block</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="padding-inline">
+      <h3>padding-inline</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="border-block-start-width">
+      <h3>border-block-start-width</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="border-inline-start-width">
+      <h3>border-inline-start-width</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="border-block-width">
+      <h3>border-block-width</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="border-inline-width">
+      <h3>border-inline-width</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="border-block">
+      <h3>border-block</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+    <section class="border-inline">
+      <h3>border-inline</h3>
+      <ul>
+        <li><div class="test"><div>TEST</div></div>と<div class="test-ref"><div>TEST</div></div>が同じに見えればOK</li>
+      </ul>
+    </section>
+  </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Fonts Level 3</title>
+<style>
+html {
+  writing-mode: vertical-rl; /* 縦書き */
+}
+@font-face {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+}
+.sourcehanserif {
+  font-family: "sourcehanserif";
+  font-style:normal;
+  src: url(../fonts/SourceHanSerif-VF.otf);
+}
+.fit {
+  display:            inline-block;
+  page-break-inside:  avoid;
+  max-height:         100%;
+  max-width:          100%;
+}
+.hltr .fit {
+  vertical-align: top;
+}
+.vrtl .fit {
+  vertical-align: baseline;
+}
+</style>
+</head>
+<body>
+<span id="page013" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="13"/>
+  <section id="UnicodeIVS">
+    <h2>参照（異体字表示を目的とした同種の技術として）：Unicode IVS縦書き</h2>
+    <div style="margin-top:0.5em">
+	<p><span style="font-weight:bold">無指定（対照用）</span>：「辻」</p>
+	<p><span style="font-weight:bold">ＪＩＳ<span style="-webkit-text-combine: horizontal;-webkit-text-combine-upright: all;text-combine-upright: all;-epub-text-combine: horizontal;">90</span>字形表示サンプル１（埋め込みフォントで表示）</span>：「<span class="sourcehanserif">辻󠄀</span>」←一点しんにょうになっていればＯＫ</p>
+	<p><span style="font-weight:bold">ＪＩＳ<span style="-webkit-text-combine: horizontal;-webkit-text-combine-upright: all;text-combine-upright: all;-epub-text-combine: horizontal;">90</span>字形表示サンプル２（デバイスフォントで表示）</span>：「辻󠄀」←一点しんにょうになっていればＯＫ</p>
+	<p><span style="font-weight:bold">ＪＩＳ２００４字形表示サンプル１（埋め込みフォントで表示）</span>：「<span class="sourcehanserif">辻󠄁</span>」←二点しんにょうになっていればＯＫ</p>
+	<p><span style="font-weight:bold">ＪＩＳ２００４字形表示サンプル２（デバイスフォントで表示）</span>：「辻󠄁」←二点しんにょうになっていればＯＫ</p>
+    </div>
+  </section>
+</body>
+</html>

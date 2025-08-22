@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Conditional Rules Level 3</title>
+<style>
+html {
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode:   horizontal-tb;
+  writing-mode: horizontal-tb;
+}
+.OK {
+  visibility: hidden;
+  color: white;
+}
+
+@supports (margin: 0) {
+  #at-supports .OK {
+    visibility: visible;
+    color: inherit;
+  }
+}
+
+@supports (unknownprop: 0) {
+  #at-supports .OK {
+    visibility: hidden;
+    color: inherit;
+  }
+}
+
+</style>
+</head>
+<body>
+<span id="page002" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="2"/>
+<h1 class="oo-midashi" id="toc-6D05A294068A4EECB8E48385F76638F6">「CSSの公式的な定義に含まれるCSSモジュール」から</h1>
+  <h1 id="toc-8067BCC0FFDC46E5B3F8FFAC6F3FBFEC">CSS Conditional Rules Level 3</h1>
+  <section id="at-supports">
+    <h2 id="toc-F84019C33ADF464BBF7720FCCE9FCABF">@supports ルール</h2>
+    <ul>
+      <li>・<span class="OK">OK</span></li>
+    </ul>
+  </section>
+</body>
+</html>

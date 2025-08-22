@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>CSS Multi-column Layout Level 1</title>
+<style>
+html {
+  -webkit-writing-mode: horizontal-tb;
+  -epub-writing-mode:   horizontal-tb;
+  writing-mode: horizontal-tb;
+}
+#multicol .test {
+  columns: 2;
+  column-gap: 9px;
+  column-rule: 1px solid;
+  border: 1px solid;
+  padding: 4px;
+}
+
+#multicol .column-span .test .span-all {
+  column-span: all;
+  border: 3px solid;
+  margin: 4px 0;
+  padding: 4px;
+}
+
+#multicol .column-fill .test {
+  width: 30em;
+  height: 10em;
+  line-height: 1.1;
+}
+
+#multicol .column-fill .test.balance {
+  column-fill: balance;
+}
+
+#multicol .column-fill .test.auto {
+  column-fill: auto;
+}
+
+</style>
+</head>
+<body>
+<span id="page015" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="15"/>
+  <h1 id="toc-F665C4424EA0405EA24C6BE342F1F207">CSS Multi-column Layout Level 1</h1>
+  <section id="multicol">
+    <h2 id="toc-4E1B55E2E2894470B7395F93BA58D213">段組</h2>
+    <div class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at itaque et sint sequi, quam voluptate libero sapiente nemo dicta deserunt alias? Velit perferendis ipsum accusamus aspernatur veritatis quis quo. Neque aspernatur quis itaque delectus in architecto minima ut cumque.</div>
+    <ul>
+      <li>・2段組(columns: 2)になっていればOK</li>
+      <li>・段間罫(column-rule)があればOK</li>
+    </ul>
+    <section class="column-span">
+      <h3>段抜き：column-span プロパティ</h3>
+      <div class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at itaque et sint sequi, quam voluptate libero sapiente nemo dicta deserunt alias?
+        <div class="span-all">Velit perferendis ipsum accusamus aspernatur veritatis quis quo.</div>
+      Dolores officia id, commodi sit tenetur neque aspernatur quis itaque delectus in architecto minima ut cumque.</div>
+      <ul>
+        <li>・段抜き(column-span: all)のブロックがあればOK</li>
+      </ul>
+    </section>
+    <section class="column-fill">
+      <h3>段バランス：column-fill プロパティ</h3>
+      <h4>column-fill: balance</h4>
+      <div class="test balance">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at itaque et sint sequi, quam voluptate libero sapiente nemo dicta deserunt alias? Velit perferendis ipsum accusamus aspernatur veritatis quis quo. Neque aspernatur quis itaque delectus in architecto minima ut cumque.</div>
+      <ul>
+        <li>・高さが固定の段組の枠の中で段の高さが均等になっていればOK</li>
+      </ul>
+      <h4>column-fill: auto</h4>
+      <div class="test auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at itaque et sint sequi, quam voluptate libero sapiente nemo dicta deserunt alias? Velit perferendis ipsum accusamus aspernatur veritatis quis quo. Neque aspernatur quis itaque delectus in architecto minima ut cumque.</div>
+      <ul>
+        <li>・高さが固定の段組の枠の中で最後の段にだけ空きが残っていればOK</li>
+      </ul>
+    </section>
+  </section>
+</body>
+</html>

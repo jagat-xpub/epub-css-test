@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html
+ xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:epub="http://www.idpf.org/2007/ops"
+ xml:lang="ja"
+ class="vrtl"
+>
+<head>
+<meta charset="UTF-8"/>
+<title>EPUB内文字、画像、背景表示テスト</title>
+<link rel="stylesheet" type="text/css" href="../style/book-style.css"/>
+</head>
+<body class="p-text">
+<div class="main">
+<span id="page067" epub:type="pagebreak" role="doc-pagebreak" aria-label="1" title="67"/>
+<h4 class="ko-midashi">３．color-transparentが有効か。ＥＰＵＢリーダーによる背景色変更にも対応するか、検索と読み上げに対応するか。</h4>
+<p><br/></p>
+<h5 class="gfont">color-transparent　夏目漱石の「草枕」の冒頭５文（検索語は「意地を通せば」）</h5>
+<p><br/></p>
+<div class="start-2em">
+<p><span class="font-090per gfont">透明文字がＥＰＵＢリーダーの背景色に左右されず（背景色を変更してテスト）不可視となるか、不可視の場合は検索に対応するかを確認する。また、読み上げするＥＰＵＢリーダーでの透明文字の音声化を確認する。</span></p>
+</div>
+<p><br/></p>
+<p><span class="gfont">①文字列単位 span での指定。</span></p>
+<p><br/></p>
+<p><span class="color-transparent">　山路を登りながら、こう考えた。</span></p>
+<p><span class="color-transparent">　智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。</span></p>
+<p><br/></p>
+<p><span class="gfont">②段落単位 div での指定。</span></p>
+<p><br/></p>
+<div class="color-transparent">
+<p>　山路を登りながら、こう考えた。</p>
+<p>　智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。</p>
+</div>
+<p><br/></p>
+<p><span class="gfont">③背景bg-dimgrayでの文字列単位 span での指定。</span></p>
+<p><br/></p>
+<div class="bg-dimgray p-2em">
+<p><span class="color-transparent">　山路を登りながら、こう考えた。</span></p>
+<p><span class="color-transparent">　智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。</span></p>
+</div>
+<p><br/></p>
+<p><span class="gfont">④背景bg-dimgrayでの文字列単位 div での指定。</span></p>
+<p><br/></p>
+<div class="bg-dimgray p-2em">
+<div class="color-transparent">
+<p>　山路を登りながら、こう考えた。</p>
+<p>　智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。</p>
+</div>
+</div>
+</div>
+</body>
+</html>
